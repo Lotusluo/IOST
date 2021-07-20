@@ -19,6 +19,8 @@ extern NSString *test;
 
 -(NSString*)saySomethings:(NSString*)params;
 
++(void)saySomethings:(NSString*)params;
+
 @end
 
 NS_ASSUME_NONNULL_END

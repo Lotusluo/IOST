@@ -11,6 +11,9 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface UIView (XX)
 
+-(void)setName1:(NSString *)name;
+-(NSString *)name1;
+
 @end
 
 NS_ASSUME_NONNULL_END

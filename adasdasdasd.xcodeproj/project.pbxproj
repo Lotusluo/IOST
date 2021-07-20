@@ -9,9 +9,10 @@
 /* Begin PBXBuildFile section */
 		0435680626833B3D00D28355 /* RegularExpressionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435680526833B3D00D28355 /* RegularExpressionTool.m */; };
 		043568202683494F00D28355 /* hehe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0435681F2683494F00D28355 /* hehe.bundle */; };
-		0435682D26834A5F00D28355 /* haha.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0435680F2683484700D28355 /* haha.bundle */; };
 		0478216C269ED62000436C69 /* PeopleOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478216B269ED62000436C69 /* PeopleOC.m */; };
 		04782178269ED80400436C69 /* PeopleCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04782177269ED80300436C69 /* PeopleCPP.cpp */; };
+		047822C1269F009900436C69 /* Testlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047822A3269EFFBB00436C69 /* Testlib.framework */; };
+		047822C2269F009900436C69 /* Testlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047822A3269EFFBB00436C69 /* Testlib.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04D9BB002695A750003778EE /* CppObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BAFE2695A750003778EE /* CppObject.cpp */; };
 		04D9BB062695A7BE003778EE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BB052695A7BE003778EE /* ViewController.mm */; };
 		04D9BB1E2695AEFC003778EE /* AntiCppObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BB1C2695AEFC003778EE /* AntiCppObject.mm */; };
@@ -30,6 +31,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		047822A2269EFFBB00436C69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 04782275269EFF6900436C69;
+			remoteInfo = Testlib;
+		};
+		047822A4269EFFBB00436C69 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 0478227E269EFF6900436C69;
+			remoteInfo = TestlibTests;
+		};
 		04F7DBEF2681EE4E00E4CCC8 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 04F7DBCB2681EE4A00E4CCC8 /* Project object */;
@@ -46,17 +61,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		047822C3269F009900436C69 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				047822C2269F009900436C69 /* Testlib.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		0435680426833B3D00D28355 /* RegularExpressionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpressionTool.h; sourceTree = "<group>"; };
 		0435680526833B3D00D28355 /* RegularExpressionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpressionTool.m; sourceTree = "<group>"; };
-		0435680F2683484700D28355 /* haha.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = haha.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		043568112683484700D28355 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0435681F2683494F00D28355 /* hehe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = hehe.bundle; sourceTree = "<group>"; };
 		04782157269ECA1100436C69 /* PeopleOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleOC.h; sourceTree = "<group>"; };
 		0478215F269ECAEE00436C69 /* PeopleCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PeopleCPP.hpp; sourceTree = "<group>"; };
 		0478216B269ED62000436C69 /* PeopleOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleOC.m; sourceTree = "<group>"; };
 		04782177269ED80300436C69 /* PeopleCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeopleCPP.cpp; sourceTree = "<group>"; };
 		04782181269EDC5E00436C69 /* CustomBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridge.h; sourceTree = "<group>"; };
+		0478229D269EFFBB00436C69 /* Testlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Testlib.xcodeproj; path = Testlib/Testlib.xcodeproj; sourceTree = "<group>"; };
 		04D9BAFE2695A750003778EE /* CppObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppObject.cpp; sourceTree = "<group>"; };
 		04D9BAFF2695A750003778EE /* CppObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppObject.hpp; sourceTree = "<group>"; };
 		04D9BB052695A7BE003778EE /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
@@ -91,17 +119,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0435680C2683484700D28355 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04F7DBD02681EE4A00E4CCC8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				047822C1269F009900436C69 /* Testlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,22 +144,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		043568102683484700D28355 /* haha */ = {
+		04782240269EFD4900436C69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				043568112683484700D28355 /* Info.plist */,
 			);
-			path = haha;
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0478229E269EFFBB00436C69 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				047822A3269EFFBB00436C69 /* Testlib.framework */,
+				047822A5269EFFBB00436C69 /* TestlibTests.xctest */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		04F7DBCA2681EE4A00E4CCC8 = {
 			isa = PBXGroup;
 			children = (
+				0478229D269EFFBB00436C69 /* Testlib.xcodeproj */,
 				04F7DBD52681EE4A00E4CCC8 /* adasdasdasd */,
 				04F7DBF12681EE4E00E4CCC8 /* adasdasdasdTests */,
 				04F7DBFC2681EE4E00E4CCC8 /* adasdasdasdUITests */,
-				043568102683484700D28355 /* haha */,
 				04F7DBD42681EE4A00E4CCC8 /* Products */,
+				04782240269EFD4900436C69 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -147,7 +178,6 @@
 				04F7DBD32681EE4A00E4CCC8 /* adasdasdasd.app */,
 				04F7DBEE2681EE4E00E4CCC8 /* adasdasdasdTests.xctest */,
 				04F7DBF92681EE4E00E4CCC8 /* adasdasdasdUITests.xctest */,
-				0435680F2683484700D28355 /* haha.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,23 +242,6 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0435680E2683484700D28355 /* haha */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 043568142683484700D28355 /* Build configuration list for PBXNativeTarget "haha" */;
-			buildPhases = (
-				0435680B2683484700D28355 /* Sources */,
-				0435680C2683484700D28355 /* Frameworks */,
-				0435680D2683484700D28355 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = haha;
-			productName = haha;
-			productReference = 0435680F2683484700D28355 /* haha.bundle */;
-			productType = "com.apple.product-type.bundle";
-		};
 		04F7DBD22681EE4A00E4CCC8 /* adasdasdasd */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 04F7DC022681EE4E00E4CCC8 /* Build configuration list for PBXNativeTarget "adasdasdasd" */;
@@ -236,6 +249,7 @@
 				04F7DBCF2681EE4A00E4CCC8 /* Sources */,
 				04F7DBD02681EE4A00E4CCC8 /* Frameworks */,
 				04F7DBD12681EE4A00E4CCC8 /* Resources */,
+				047822C3269F009900436C69 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -290,9 +304,6 @@
 			attributes = {
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
-					0435680E2683484700D28355 = {
-						CreatedOnToolsVersion = 12.4;
-					};
 					04F7DBD22681EE4A00E4CCC8 = {
 						CreatedOnToolsVersion = 12.4;
 					};
@@ -317,31 +328,45 @@
 			mainGroup = 04F7DBCA2681EE4A00E4CCC8;
 			productRefGroup = 04F7DBD42681EE4A00E4CCC8 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 0478229E269EFFBB00436C69 /* Products */;
+					ProjectRef = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				04F7DBD22681EE4A00E4CCC8 /* adasdasdasd */,
 				04F7DBED2681EE4E00E4CCC8 /* adasdasdasdTests */,
 				04F7DBF82681EE4E00E4CCC8 /* adasdasdasdUITests */,
-				0435680E2683484700D28355 /* haha */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		0435680D2683484700D28355 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
+/* Begin PBXReferenceProxy section */
+		047822A3269EFFBB00436C69 /* Testlib.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Testlib.framework;
+			remoteRef = 047822A2269EFFBB00436C69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		047822A5269EFFBB00436C69 /* TestlibTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = TestlibTests.xctest;
+			remoteRef = 047822A4269EFFBB00436C69 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
 		04F7DBD12681EE4A00E4CCC8 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				04F7DBE62681EE4D00E4CCC8 /* LaunchScreen.storyboard in Resources */,
 				043568202683494F00D28355 /* hehe.bundle in Resources */,
-				0435682D26834A5F00D28355 /* haha.bundle in Resources */,
 				04F7DBE32681EE4D00E4CCC8 /* Assets.xcassets in Resources */,
 				04F7DBE12681EE4A00E4CCC8 /* Main.storyboard in Resources */,
 			);
@@ -364,13 +389,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0435680B2683484700D28355 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		04F7DBCF2681EE4A00E4CCC8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,38 +460,6 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		043568122683484700D28355 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = haha/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartwasp.assistant.app.haha;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		043568132683484700D28355 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = haha/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
-				MACOSX_DEPLOYMENT_TARGET = 11.1;
-				PRODUCT_BUNDLE_IDENTIFIER = com.smartwasp.assistant.app.haha;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
-		};
 		04F7DC002681EE4E00E4CCC8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -509,7 +495,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -569,7 +555,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
@@ -699,15 +685,6 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		043568142683484700D28355 /* Build configuration list for PBXNativeTarget "haha" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				043568122683484700D28355 /* Debug */,
-				043568132683484700D28355 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		04F7DBCE2681EE4A00E4CCC8 /* Build configuration list for PBXProject "adasdasdasd" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

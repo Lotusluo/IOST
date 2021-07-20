@@ -6,6 +6,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Testlib/Testlib.h>
 
 @interface AppDelegate ()
 

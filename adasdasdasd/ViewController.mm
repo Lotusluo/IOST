@@ -14,6 +14,9 @@
 #import "TrickCpp.hpp"
 #import "PeopleCPP.hpp"
 #import "PeopleOC.h"
+#import <Testlib/InsetsLabel.h>
+#import <objc/message.h>
+#import "UIView+XX.h"
 
 void transferFun(void *obj,...){
     PeopleOC *peopleOC = (__bridge_transfer PeopleOC*)obj;
@@ -42,6 +45,17 @@ struct delegate{
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.test = @"test";
+    InsetsLabel *skillView = [[InsetsLabel alloc] init];
+    skillView.rightInset = 10;
+    skillView.leftInset = 10;
+//    skillView.preferredMaxLayoutWidth = 200;
+    skillView.text = @"skillStr";
+    skillView.textColor = [UIColor whiteColor];
+    skillView.backgroundColor = [UIColor redColor];
+
+//    skillView.frame = CGRectMake(50, 50, 300, 80);
+//    [skillView sizeToFit];
+    [self.view addSubview:skillView];
 //    UIBezierPath *path = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 100, 100)];
 //    [path appendPath:[[UIBezierPath bezierPathWithRect:CGRectMake(20, 20, 80, 80)] bezierPathByReversingPath]];
 //    self.layer = [CAShapeLayer layer];
@@ -87,11 +101,23 @@ struct delegate{
 }
 
 - (IBAction)click:(id)sender {
+    self.view.name1 = @"name1";
+    NSLog(@"name1:%@",self.view.name1);
     PeopleOC *peopleOC = [PeopleOC new];
     void *pointer = (__bridge_retained void*)peopleOC;
     PeopleCPP *peopleCPP = new PeopleCPP(pointer,transferFun);
-    peopleCPP->doSomething("你好");
     delete peopleCPP;
+//    PeopleOC *people = [[PeopleOC alloc] init];
+//    void *pointer = (__bridge_retained void*)people;
+//    delete pointer;
+//    [people performSelector:@selector(saySomethingsNew:) withObject:@"陶瓷"];
+//    objc_msgSend(people.class, @selector(saySomethings:),@"xixi");
 }
+//
+//void eat(id _id){
+//    void* t = (__bridge_retained void*)_id;
+//    CF
+//    printf("eat");
+//}
 
 @end

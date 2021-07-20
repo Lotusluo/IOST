@@ -42,7 +42,15 @@
 
 -(void)ritl_borderlayoutsubViews{
     [self ritl_borderlayoutsubViews];
-    NSLog(@"customLayoutSubviews");
+}
+
+-(void)setName1:(NSString *)name
+{
+    objc_setAssociatedObject(self, @"name",name, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+-(NSString *)name1
+{
+    return objc_getAssociatedObject(self, @"name");
 }
 
 @end

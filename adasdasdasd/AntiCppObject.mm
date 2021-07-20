@@ -13,8 +13,8 @@ struct delegate{
 };
 
 AntiCppObject::AntiCppObject(){
-    dele = new delegate;
-    dele -> oc = [TestView new];
+    dele2 = new delegate;
+    dele2 -> oc = [TestView new];
     printf("AntiCppObject 初始化\n");
 }
 
