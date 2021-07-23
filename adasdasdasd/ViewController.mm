@@ -103,10 +103,13 @@ struct delegate{
 - (IBAction)click:(id)sender {
     self.view.name1 = @"name1";
     NSLog(@"name1:%@",self.view.name1);
+    test1 = @"vm";
+    test = @"vm";
     PeopleOC *peopleOC = [PeopleOC new];
-    void *pointer = (__bridge_retained void*)peopleOC;
-    PeopleCPP *peopleCPP = new PeopleCPP(pointer,transferFun);
-    delete peopleCPP;
+//    peopleOC.testParams = @"a";
+//    void *pointer = (__bridge_retained void*)peopleOC;
+//    PeopleCPP *peopleCPP = new PeopleCPP(pointer,transferFun);
+//    delete peopleCPP;
 //    PeopleOC *people = [[PeopleOC alloc] init];
 //    void *pointer = (__bridge_retained void*)people;
 //    delete pointer;

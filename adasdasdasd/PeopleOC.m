@@ -19,11 +19,15 @@ NSString *test = @"a";
     self = [super init];
     if(self){
         str = @"a";
-        NSLog(@"create call");
+        NSLog(@"create call:%@",test);
+        [self addObserver:self forKeyPath:@"testParams" options:NSKeyValueObservingOptionNew context:nil];
     }
     return self;
 }
 
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
+    NSLog(@"observeValueForKeyPath:%@",keyPath);
+}
 -(NSString*)saySomethings:(NSString*)params{
     NSLog(@"-PeopleOC:%@",params);
     return [NSString stringWithFormat:@"Tranfer with %@",params];

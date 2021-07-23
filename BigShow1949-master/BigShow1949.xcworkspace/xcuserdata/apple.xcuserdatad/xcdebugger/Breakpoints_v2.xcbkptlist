@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "C57F3228-6821-4B6E-A2AE-1B1320B3FFE6"
+   type = "0"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "120B187E-E864-4CD3-8599-E197EE941458"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigShow1949/Classes/05 - KnowledgePoint(&#x96f6;&#x6563;&#x77e5;&#x8bc6;&#x70b9;)/JS/JS_URL/JS_URLViewController.m"
+            timestampString = "543562753.188019"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "43"
+            endingLineNumber = "43"
+            landmarkName = "-handleCustomAction:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "3083DDC2-CD06-41B4-A28B-1FF0B72B41C2"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigShow1949/Classes/05 - KnowledgePoint(&#x96f6;&#x6563;&#x77e5;&#x8bc6;&#x70b9;)/JS/JS_URL/JS_URLViewController.m"
+            timestampString = "543562753.2574281"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "155"
+            endingLineNumber = "155"
+            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "6AF8EBFB-5EFC-4BB6-8C5E-38D6141E02EA"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigShow1949/Classes/05 - KnowledgePoint(&#x96f6;&#x6563;&#x77e5;&#x8bc6;&#x70b9;)/JS/JS_URL/JS_UIWebView_URLViewController.m"
+            timestampString = "551895215.796132"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "157"
+            endingLineNumber = "157"
+            landmarkName = "-webView:shouldStartLoadWithRequest:navigationType:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "27ABD978-3CB9-4871-A074-C5F597AC0D5C"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigShow1949/Classes/05 - KnowledgePoint(&#x96f6;&#x6563;&#x77e5;&#x8bc6;&#x70b9;)/JS/JS_MessageHandler/JS_MessageHandlerViewController.m"
+            timestampString = "551897258.39977"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "229"
+            endingLineNumber = "229"
+            landmarkName = "-webView:runJavaScriptAlertPanelWithMessage:initiatedByFrame:completionHandler:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "FD5C80EF-101B-4AA8-9988-43A85C8D00A4"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "BigShow1949/Classes/05 - KnowledgePoint(&#x96f6;&#x6563;&#x77e5;&#x8bc6;&#x70b9;)/JS/JS_MessageHandler/JS_MessageHandlerViewController.m"
+            timestampString = "551897258.4074301"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "245"
+            endingLineNumber = "245"
+            landmarkName = "-userContentController:didReceiveScriptMessage:"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>

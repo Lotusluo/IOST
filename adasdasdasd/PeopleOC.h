@@ -13,7 +13,11 @@
 NS_ASSUME_NONNULL_BEGIN
 extern NSString *test;
 
+static NSString *test1;
+
 @interface PeopleOC : NSObject
+
+@property(nonatomic,strong)NSString *testParams;
 
 @property(nonatomic)InterfaceBridge call;
 
