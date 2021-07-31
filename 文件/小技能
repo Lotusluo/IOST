@@ -1,0 +1,272 @@
+-(BOOL) respondsToSelector: selector 判读实例是否有这样方法
++(BOOL) instancesRespondToSelector:  判断类是否有这个方法。此方法是类方法，不能用在类的对象
+
+
+对象在运行时获取其类型的能力称为内省。内省可以有多种方法实现。
+判断对象类型
+-(BOOL) isKindOfClass: classObj判断是否是这个类或者这个类的子类的实例
+-(BOOL) isMemberOfClass: classObj 判断是否是这个类的实例
+
+performSelector调用：
+
+   [self performSelector:@selector(CallBack0)];
+   [self performSelector:@selector(CallBack1:) withObject:1];
+   [self performSelector:@selector(CallBack2:b:) withObject:1 withObject:2];
+
+根据函数名动态调用：
+
+   NSString *a=@"CallBack0";
+    SEL faSelector=NSSelectorFromString(a);
+    [self performSelector:faSelector];
+    
+    NSString *b=@"CallBack1:";
+    SEL fbSelector=NSSelectorFromString(b);
+    [self performSelector:fbSelector withObject:1];
+    
+    NSString *c=@"CallBack2:b:";
+    SEL fcSelector=NSSelectorFromString(c);
+    [self performSelector:fcSelector withObject:1 withObject:2];
+
+这样就可以根据函数名调用函数啦！
+
+
+#define kIs_iphone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)
+#define kIs_iPhoneX kScreenWidth >=375.0f && kScreenHeight >=812.0f&& kIs_iphone
+ 
+/*状态栏高度*/
+#define kStatusBarHeight (CGFloat)(kIs_iPhoneX?(44.0):(20.0))
+/*导航栏高度*/
+#define kNavBarHeight (44)
+/*状态栏和导航栏总高度*/
+#define kNavBarAndStatusBarHeight (CGFloat)(kIs_iPhoneX?(88.0):(64.0))
+/*TabBar高度*/
+#define kTabBarHeight (CGFloat)(kIs_iPhoneX?(49.0 + 34.0):(49.0))
+/*顶部安全区域远离高度*/
+#define kTopBarSafeHeight (CGFloat)(kIs_iPhoneX?(44.0):(0))
+/*底部安全区域远离高度*/
+#define kBottomSafeHeight (CGFloat)(kIs_iPhoneX?(34.0):(0))
+/*iPhoneX的状态栏高度差值*/
+#define kTopBarDifHeight (CGFloat)(kIs_iPhoneX?(24.0):(0))
+/*导航条和Tabbar总高度*/
+#define kNavAndTabHeight (kNavBarAndStatusBarHeight + kTabBarHeight)
+
+
+1、问题展示
+先来码一下我走过的坑：
+(1)替换 UIImage 类的 init 方法
+
+#import "UIImage+Swizzle.h"
+#import <objc/message.h>
+
+@implementation UIImage (Swizzle)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self swizzleInstanceSel:@selector(init) withNewSel:@selector(qq_init)];
+    });
+}
+
++ (void)swizzleInstanceSel:(SEL)oldSel withNewSel:(SEL)newSel {
+    Class class = self.class;
+    Method oldM = class_getInstanceMethod(class, oldSel);
+    Method newM = class_getInstanceMethod(class, newSel);
+    BOOL didAdd = class_addMethod(class, oldSel, method_getImplementation(newM), method_getTypeEncoding(newM));
+    if (didAdd) {
+        NSLog(@"swizzleInstanceSel * didAdd");
+        class_replaceMethod(class, newSel, method_getImplementation(oldM), method_getTypeEncoding(oldM));
+    }
+    else {
+        NSLog(@"swizzleInstanceSel * didn'tAdd ----> exchange!");
+        method_exchangeImplementations(oldM, newM);
+    }
+}
+
+- (instancetype)qq_init {
+    NSLog(@"自定义的qq_init方法 - %s", __func__);
+    return [self qq_init];
+}
+
+@end
+然后在 ViewController 类中调用 UIImage 的 init 方法：UIImage * image = [[UIImage alloc] init];，结果控制器的打印如下：
+
+2018-06-15 11:00:37.155152+0800 AddMethodTest[22950:4869406] swizzleInstanceSel * didAdd
+2018-06-15 11:00:37.274999+0800 AddMethodTest[22950:4869406] 自定义的qq_init方法 - -[UIImage(Swizzle) qq_init]
+从打印中可以看出，class_addMethod 方法的返回值 didAdd 为YES，即调用了 class_replaceMethod 方法。调用 UIImage 的 init 方法，实际上运行的时候走的是我们自定义的 qq_init 方法，达到效果，然而看下面👇
+
+(2)替换 UIImage 类的 imageNamed 方法
+
+#import "UIImage+Swizzle.h"
+#import <objc/message.h>
+
+@implementation UIImage (Swizzle)
+
++ (void)load {
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        [self swizzleClassSel:@selector(imageNamed:) withNewSel:@selector(qq_imageNamed:)];
+    });
+}
+
++ (void)swizzleClassSel:(SEL)oldSel withNewSel:(SEL)newSel {
+    Class class = self.class;
+    Method oldM = class_getClassMethod(class, oldSel);
+    Method newM = class_getClassMethod(class, newSel);
+    BOOL didAdd = class_addMethod(class, oldSel, method_getImplementation(newM), method_getTypeEncoding(newM));
+    if (didAdd) {
+        NSLog(@"swizzleClassSel * didAdd");
+        class_replaceMethod(class, newSel, method_getImplementation(oldM), method_getTypeEncoding(oldM));
+    }
+    else {
+        NSLog(@"swizzleClassSel * didn'tAdd ----> exchange!");
+        method_exchangeImplementations(oldM, newM);
+    }
+}
+
++ (UIImage *)qq_imageNamed:(NSString *)name {
+    NSLog(@"自定义的imageNamed方法 - %s", __func__);
+    return [self qq_imageNamed:name];
+}
+
+@end
+然后在 ViewController 类中调用 UIImage 的 imageNamed 方法：UIImage * image = [UIImage imageNamed:@"1"];，结果控制器的打印如下：
+
+2018-06-15 11:12:13.806120+0800 AddMethodTest[22955:4873159] swizzleClassSel * didAdd
+从打印中可以看出，class_addMethod 方法的返回值 didAdd 为YES，即调用了 class_replaceMethod 方法。但是调用 UIImage 的 imageNamed 方法，实际上运行的时候并没有走我们自定义的 qq_imageNamed 方法，这是个什么情况？？？
+我就很费解啊！为什么相同的逻辑在同一个类的同一个方法中调用的结果不一样？？
+
+2、原理分析
+百思不得解之后，我翻了一下系统中 class_addMethod 的方法介绍，
+
+/** 
+ * Adds a new method to a class with a given name and implementation.
+ * 
+ * @param cls The class to which to add a method.
+ * @param name A selector that specifies the name of the method being added.
+ * @param imp A function which is the implementation of the new method. The function must take at least two arguments—self and _cmd.
+ * @param types An array of characters that describe the types of the arguments to the method. 
+ * 
+ * @return YES if the method was added successfully, otherwise NO 
+ *  (for example, the class already contains a method implementation with that name).
+ *
+ * @note class_addMethod will add an override of a superclass's implementation, 
+ *  but will not replace an existing implementation in this class. 
+ *  To change an existing implementation, use method_setImplementation.
+ */
+OBJC_EXPORT BOOL
+class_addMethod(Class _Nullable cls, SEL _Nonnull name, IMP _Nonnull imp, 
+                const char * _Nullable types) 
+    OBJC_AVAILABLE(10.5, 2.0, 9.0, 1.0, 2.0);
+很明确，如果method添加成功就返回YES，否则返回NO（比如类中已经包含这个方法实现）。好像忽然就明白了，， 实例方法的方法列表保存在类中，而类方法的方法列表保存在元类中。这样好像就说得通了。
+其实这些c方法操作的都是结构体， class_addMethod的第一个属性是Class，新增的也是这个Class里的方法。我这里的 class_addMethod 是给 self.class（class_addMethod方法的第一个参数） 添加方法，即给 UIImage 类添加方法，而 UIImage 这个类中保存的都是实例方法，故此这地方的  class_addMethod 只能在给这个类添加实例方法的时候使用。换句话说，就是 Class 保存的是 instance 的方法，所以加的那些方法最终体现在实例上。
+
+3、解决方法
+搞清楚问题后就知道了，如果我想替换掉类方法，就要把第一个参数给换成元类的本体，即 objc_getMetaClass(object_getClassName(self)) 就可以了。
+
++ (void)swizzleClassSel:(SEL)oldSel withNewSel:(SEL)newSel {
+    Class class = objc_getMetaClass(object_getClassName(self));
+    Method oldM = class_getClassMethod(class, oldSel);
+    Method newM = class_getClassMethod(class, newSel);
+    BOOL didAdd = class_addMethod(class, oldSel, method_getImplementation(newM), method_getTypeEncoding(newM));
+    if (didAdd) {
+        NSLog(@"swizzleInstanceSel * didAdd");
+        class_replaceMethod(class, newSel, method_getImplementation(oldM), method_getTypeEncoding(oldM));
+    }
+    else {
+        NSLog(@"swizzleInstanceSel * didn'tAdd ----> exchange!");
+        method_exchangeImplementations(oldM, newM);
+    }
+}
+打印结果如下：
+
+2018-06-15 11:41:41.630059+0800 AddMethodTest[22958:4876411]  swizzleInstanceSel * didn'tAdd ----> exchange!
+2018-06-15 11:41:41.630059+0800 AddMethodTest[22958:4876411]  自定义的imageNamed方法 - +[UIImage(Swizzle) qq_imageNamed:]
+这样就解释的通了。
+
+PS：
+类和元类的结构体是一致的，所以很多关系都是可以搬过来的。
+实例-类，类-元类的区别在于，实例是开发new出来的用于承载业务信息的，类是系统new出来的，用于描述实例的，表面上的用处是大不一样的，但是挖到深层结构就是通用的。
+
+
+
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(NSString *)string {
+    if ([self isInputRuleNotBlank:string] || [string isEqualToString:@""]) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
+
+- (void)textFieldChanged:(UITextField *)textField {
+    NSString *toBeString = textField.text;
+    if (![self isInputRuleAndBlank:toBeString]) {
+        textField.text = [self disable_emoji:toBeString];
+        return;
+    }
+    NSString *lang = [[textField textInputMode] primaryLanguage];
+    if([lang isEqualToString:@"zh-Hans"]) {
+        UITextRange *selectedRange = [textField markedTextRange];
+        //获取高亮部分
+        UITextPosition *position = [textField positionFromPosition:selectedRange.start offset:0];
+        //没有高亮选择的字，则对已输入的文字进行字数统计和限制
+        if(!position) {
+            NSString *getStr = [self getSubString:toBeString];
+            if(getStr && getStr.length > 0) {
+                textField.text = getStr;
+            }
+        }
+    } else{
+        NSString *getStr = [self getSubString:toBeString];
+        if(getStr && getStr.length > 0) {
+            textField.text= getStr;
+        }
+    }
+}
+/**
+ * 字母、数字、中文正则判断（不包括空格）
+ */
+- (BOOL)isInputRuleNotBlank:(NSString *)str {
+    NSString *pattern = @"^[a-zA-Z\u4E00-\u9FA5\\d]*$";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:str];
+    return isMatch;
+}
+/**
+ * 字母、数字、中文正则判断（包括空格）（在系统输入法中文输入时会出现拼音之间有空格，需要忽略，当按return键时会自动用字母替换，按空格输入响应汉字）
+ */
+- (BOOL)isInputRuleAndBlank:(NSString *)str {
+    NSString *pattern = @"^[a-zA-Z\u4E00-\u9FA5\\d\\s]*$";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:str];
+    return isMatch;
+}
+/**
+ *  获得 kMaxLength长度的字符
+ */
+-(NSString *)getSubString:(NSString*)string{
+    NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+    NSData* data = [string dataUsingEncoding:encoding];
+    NSInteger length = [data length];
+    if (length > kMaxLength) {
+        NSData *data1 = [data subdataWithRange:NSMakeRange(0, kMaxLength)];
+        NSString *content = [[NSString alloc] initWithData:data1 encoding:encoding];//注意：当截取kMaxLength长度字符时把中文字符截断返回的content会是nil
+        if (!content || content.length == 0) {
+            data1 = [data subdataWithRange:NSMakeRange(0, kMaxLength - 1)];
+            content =  [[NSString alloc] initWithData:data1 encoding:encoding];
+        }
+        return content;
+    }
+    return nil;
+}
+/**
+ *  过滤字符串中的emoji
+ */
+- (NSString *)disable_emoji:(NSString *)text{
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"[^\\u0020-\\u007E\\u00A0-\\u00BE\\u2E80-\\uA4CF\\uF900-\\uFAFF\\uFE30-\\uFE4F\\uFF00-\\uFFEF\\u0080-\\u009F\\u2000-\\u201f\r\n]"options:NSRegularExpressionCaseInsensitive error:nil];
+    NSString *modifiedString = [regex stringByReplacingMatchesInString:text
+                                                               options:0
+                                                                 range:NSMakeRange(0, [text length])
+                                                          withTemplate:@""];
+    return modifiedString;
+}

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="269" id="KGk-i7-Jjw" customClass="JANestCell">
+            <rect key="frame" x="0.0" y="0.0" width="324" height="269"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="268"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_time" translatesAutoresizingMaskIntoConstraints="NO" id="r3W-Gk-arh">
+                        <rect key="frame" x="15" y="8" width="33" height="33"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="33" id="6I1-Xs-wuY"/>
+                            <constraint firstAttribute="width" constant="33" id="lnK-XG-AVs"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="237" translatesAutoresizingMaskIntoConstraints="NO" id="CAl-is-Deb">
+                        <rect key="frame" x="68" y="15" width="241" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0MC-yl-EPL">
+                        <rect key="frame" x="68" y="207" width="241" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Y1q-DK-98D">
+                        <rect key="frame" x="68" y="46" width="241" height="151"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="750" constant="151" id="gTp-yK-GkY"/>
+                        </constraints>
+                        <connections>
+                            <outlet property="dataSource" destination="KGk-i7-Jjw" id="SUM-cu-yDh"/>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="wYM-Gg-iQU"/>
+                        </connections>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ycj-gY-Fvn">
+                        <rect key="frame" x="31" y="0.0" width="1" height="8"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="rdv-rd-BLt"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S86-JQ-HNP">
+                        <rect key="frame" x="28" y="260" width="8" height="8"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="8" id="gtU-ER-gzz"/>
+                            <constraint firstAttribute="width" constant="8" id="h00-pn-snU"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="alB-QI-2ul">
+                        <rect key="frame" x="31" y="41" width="1" height="227"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="1" id="bhJ-Jf-6ZD"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="0MC-yl-EPL" firstAttribute="trailing" secondItem="Y1q-DK-98D" secondAttribute="trailing" id="2xI-ly-TZ3"/>
+                    <constraint firstAttribute="bottom" secondItem="S86-JQ-HNP" secondAttribute="bottom" id="7Ak-ca-1Hd"/>
+                    <constraint firstAttribute="bottom" secondItem="alB-QI-2ul" secondAttribute="bottom" id="AoF-On-0VK"/>
+                    <constraint firstAttribute="trailing" secondItem="CAl-is-Deb" secondAttribute="trailing" constant="15" id="JyL-D2-VCc"/>
+                    <constraint firstItem="alB-QI-2ul" firstAttribute="top" secondItem="r3W-Gk-arh" secondAttribute="bottom" id="KtF-NY-8tN"/>
+                    <constraint firstItem="Ycj-gY-Fvn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LVY-mX-ClN"/>
+                    <constraint firstItem="Ycj-gY-Fvn" firstAttribute="centerX" secondItem="r3W-Gk-arh" secondAttribute="centerX" id="LgZ-pm-IWr"/>
+                    <constraint firstItem="Y1q-DK-98D" firstAttribute="top" secondItem="CAl-is-Deb" secondAttribute="bottom" constant="10" id="SKq-Oo-QET"/>
+                    <constraint firstItem="S86-JQ-HNP" firstAttribute="centerX" secondItem="r3W-Gk-arh" secondAttribute="centerX" id="SfC-Pr-WEr"/>
+                    <constraint firstItem="Y1q-DK-98D" firstAttribute="leading" secondItem="CAl-is-Deb" secondAttribute="leading" id="XMe-dg-eXI"/>
+                    <constraint firstItem="CAl-is-Deb" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="Yyu-sd-ESw"/>
+                    <constraint firstItem="0MC-yl-EPL" firstAttribute="top" secondItem="Y1q-DK-98D" secondAttribute="bottom" constant="10" id="ceI-aD-LVI"/>
+                    <constraint firstItem="CAl-is-Deb" firstAttribute="leading" secondItem="r3W-Gk-arh" secondAttribute="trailing" constant="20" id="hFb-0o-6sV"/>
+                    <constraint firstItem="alB-QI-2ul" firstAttribute="centerX" secondItem="r3W-Gk-arh" secondAttribute="centerX" id="hhw-4H-K3z"/>
+                    <constraint firstItem="r3W-Gk-arh" firstAttribute="top" secondItem="Ycj-gY-Fvn" secondAttribute="bottom" id="ith-YQ-9nt"/>
+                    <constraint firstItem="0MC-yl-EPL" firstAttribute="leading" secondItem="Y1q-DK-98D" secondAttribute="leading" id="k5z-SZ-AyK"/>
+                    <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="0MC-yl-EPL" secondAttribute="bottom" id="nhR-aR-9ho"/>
+                    <constraint firstItem="Y1q-DK-98D" firstAttribute="trailing" secondItem="CAl-is-Deb" secondAttribute="trailing" id="xUK-IG-113"/>
+                    <constraint firstItem="r3W-Gk-arh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="yTi-Im-ZOE"/>
+                    <constraint firstItem="r3W-Gk-arh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="zhu-IQ-hpd"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="dotView" destination="S86-JQ-HNP" id="6Ua-Od-01Y"/>
+                <outlet property="icon" destination="r3W-Gk-arh" id="v7M-ry-cvq"/>
+                <outlet property="lblContent" destination="0MC-yl-EPL" id="OZy-ww-XdS"/>
+                <outlet property="lblTheme" destination="CAl-is-Deb" id="ISb-Jd-KE0"/>
+                <outlet property="nestTableView" destination="Y1q-DK-98D" id="moi-49-hZp"/>
+                <outlet property="tableHeightConstraint" destination="gTp-yK-GkY" id="wVG-AI-9ps"/>
+            </connections>
+            <point key="canvasLocation" x="374" y="222.5"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_time" width="33" height="33"/>
+    </resources>
+</document>

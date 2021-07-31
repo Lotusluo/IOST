@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+  <head>
+  <meta name="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+   <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+  <script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"60207",secure:"60208"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+  
+  <body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-3" data-genuitec-path="/webbrigde/WebRoot/web.html">
+    <h1 data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-3" data-genuitec-path="/webbrigde/WebRoot/web.html">WebViewJavascriptBridge Demo</h1>
+   <!--  phoneNum:<input id="phoneNum" name="phoneNum" value="15521151993"/><br>
+    verifyCode:<input id="verifyCode" name="verifyCode" value=""/><img id="verifycodeImage" name ="verifycodeImage" src=""><br>
+    <input id="verifyKey" name="verifyKey" value="" type="hidden"/>
+    userId:<input id="userId" name="userId" value="efd465ca-70de-4153-ab29-2f3d6ebeacce"/><br>
+    token:<input id="token" name="token" value="6700f1c3ce35723cf1f3d46019b547ed"/><br>
+    
+    <textarea id="resultLog" name="resultLog" rows="5" cols="60"></textarea><br>
+    ================x===============<br>
+    操作说明：<br>
+    1.酷狗登录步骤：输入手机号->获取图片验证码->填入“verifyCode框”->获取登录短信验证码->填入“verifyCode框”->酷狗登录<br>
+    ================================<br>
+    <div id='buttons'></div> <div id='log'></div> -->
+    
+    <div>
+    <button id="openLoginPage" name="openLoginPage">打开登录页</button><br>
+	<button id="openNewPage" name="openNewPage">新页面</button><br> 
+	<button id="reloadOldPage" name="reloadOldPage">刷新页面</button><br>
+	<button id="closePage" name="closePage">关闭页面</button><br>
+	<button id="loginFailed" name="loginFailed">取消登录</button><br>
+    <button id="authSuccess" name="authSuccess">授权成功</button><br>
+	<!-- 其他页面 -->
+	<!-- <button id="blogId" name="blogId">闹钟</button><br> 
+	<button id="blogId" name="blogId">留声</button><br>
+	<button id="blogId" name="blogId">技能</button><br> -->
+<!-- 	<button id="requestKugouImgCodeEx" name="requestKugouImgCodeEx">酷狗图片验证码</button><br>
+	<button id="requestKugouVerifyCode" name="requestKugouVerifyCode">酷狗登陆验证码</button><br>
+	<button id="loginKugouWithMobile" name="loginKugouWithMobile">酷狗登陆</button><br> -->
+	<!-- <button id="startLiuShengTrain" name="startLiuShengTrain">留声</button><br> -->
+    </div>
+    <script>
+    var vConsole = new VConsole();
+      window.onerror = function(err) {
+        log('window.onerror: ' + err)
+      }
+    	
+      /*这段代码是固定的，必须要放到js中*/
+      function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+      }
+    
+      /*与OC交互的所有JS方法都要放在此处注册，才能调用通过JS调用OC或者让OC调用这里的JS*/
+      
+       document.getElementById('openLoginPage').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('openLoginPage',"", function(response) {
+         	})
+         });
+       }
+       
+       document.getElementById('reloadOldPage').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('reloadOldPage',"", function(response) {
+         	})
+         });
+       }
+       
+       document.getElementById('closePage').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('closePage',"", function(response) {
+         	})
+         });
+       }
+     
+     document.getElementById('loginFailed').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('loginFailed',{'type':'1'}, function(response) {
+         	})
+         });
+       }
+    document.getElementById('authSuccess').onclick = function () {
+        setupWebViewJavascriptBridge(function(bridge) {
+                                     bridge.callHandler('authSuccess',"", function(response) {
+                                                        })
+                                     });
+    }
+    
+       document.getElementById('openNewPage').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('openNewPage',{'url':'http://10.4.114.150:8080/webbrigde/test.html','headers':{'token':'abcdefghijk123456789'},'sendToken':true}, function(response) {
+         	})
+         });
+       }
+       
+       document.getElementById('requestKugouImgCodeEx').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+          	bridge.callHandler('requestKugouImgCodeEx','', function(response) {
+          		
+          		var data = response['data'];
+          		console.log("verifycode :"+data['verifycode'])
+          		console.log("verifykey :"+data['verifykey'])
+          		
+         		document.getElementById('verifycodeImage').src="data:image/png;base64,"+data['verifycode']
+         		document.getElementById('verifyKey').value=data['verifykey']
+         	})
+         });
+       }
+       
+       document.getElementById('requestKugouVerifyCode').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+         	var phoneNum = document.getElementById('phoneNum').value
+         	var verifyKey = document.getElementById('verifyKey').value
+         	var verifyCode = document.getElementById('verifyCode').value
+          	bridge.callHandler('requestKugouVerifyCode',{'mobile':phoneNum,'verifyKey':verifyKey,'verifyCode':verifyCode}, function(response) {
+          		var str = JSON.stringify(response)
+         		console.log("requestKugouVerifyCode response:"+str)
+         		document.getElementById('verifyCode').value=""
+         	})
+         });
+       }
+       
+       document.getElementById('loginKugouWithMobile').onclick = function () {
+         
+         setupWebViewJavascriptBridge(function(bridge) {
+         	var phoneNum = document.getElementById('phoneNum').value
+         	var verifyCode = document.getElementById('verifyCode').value
+          	bridge.callHandler('loginKugouWithMobile',{'mobile':phoneNum,'verifyCode':verifyCode}, function(response) {
+          		var str = JSON.stringify(response)
+         		console.log("loginKugouWithMobile response:"+str)
+         		document.getElementById('resultLog').value=document.getElementById('resultLog').value+"\n"+str
+         	})
+         });
+       }
+       
+       document.getElementById('startLiuShengTrain').onclick = function () {
+         setupWebViewJavascriptBridge(function(bridge) {
+         	var userId = document.getElementById('userId').value
+         	var token = document.getElementById('token').value
+         	bridge.callHandler('startLiuShengTrain',{'userId':userId,'token':token}, function(response) {
+         		var str = JSON.stringify(response)
+         		console.log("startLiuShengTrain response:"+str)
+       		})
+         });
+       }
+       
+    </script>
+    
+    
+    
+  </body>
+</html>

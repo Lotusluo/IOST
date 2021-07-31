@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="JAHeaderFooterView">
+            <rect key="frame" x="0.0" y="0.0" width="350" height="132"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FWW-dT-UJi">
+                    <rect key="frame" x="68" y="10" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ydd-wT-AS7">
+                    <rect key="frame" x="68" y="36" width="267" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="51K-DM-bXw">
+                    <rect key="frame" x="31" y="38" width="1" height="94"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="kAb-ki-N7E"/>
+                    </constraints>
+                </view>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_time" translatesAutoresizingMaskIntoConstraints="NO" id="MsB-mb-RmO">
+                    <rect key="frame" x="15" y="5" width="33" height="33"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="33" id="7tm-mk-Qdg"/>
+                        <constraint firstAttribute="width" constant="33" id="vY8-SN-YGN"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FD9-rC-vwZ">
+                    <rect key="frame" x="31" y="0.0" width="1" height="5"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="1" id="q3M-br-ra0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="51K-DM-bXw" secondAttribute="bottom" id="7K8-Ne-Ab0"/>
+                <constraint firstItem="FWW-dT-UJi" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="PCS-tA-DV2"/>
+                <constraint firstItem="ydd-wT-AS7" firstAttribute="top" secondItem="FWW-dT-UJi" secondAttribute="bottom" constant="5" id="Soc-nN-dfv"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="ydd-wT-AS7" secondAttribute="bottom" id="bCb-dE-5pG"/>
+                <constraint firstItem="MsB-mb-RmO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="fYh-yr-lPr"/>
+                <constraint firstItem="51K-DM-bXw" firstAttribute="centerX" secondItem="MsB-mb-RmO" secondAttribute="centerX" id="hmL-c7-Nw1"/>
+                <constraint firstItem="MsB-mb-RmO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="15" id="jCq-uL-lA8"/>
+                <constraint firstItem="51K-DM-bXw" firstAttribute="top" secondItem="MsB-mb-RmO" secondAttribute="bottom" id="k6R-Mo-LYQ"/>
+                <constraint firstItem="MsB-mb-RmO" firstAttribute="top" secondItem="FD9-rC-vwZ" secondAttribute="bottom" id="r2a-x8-Zat"/>
+                <constraint firstItem="FWW-dT-UJi" firstAttribute="leading" secondItem="MsB-mb-RmO" secondAttribute="trailing" constant="20" id="rm8-gU-5OM"/>
+                <constraint firstAttribute="trailing" secondItem="ydd-wT-AS7" secondAttribute="trailing" constant="15" id="tv7-Kk-Jt0"/>
+                <constraint firstItem="ydd-wT-AS7" firstAttribute="leading" secondItem="FWW-dT-UJi" secondAttribute="leading" id="vRU-nM-Gfs"/>
+                <constraint firstItem="FD9-rC-vwZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="xtF-5P-W2b"/>
+                <constraint firstItem="FD9-rC-vwZ" firstAttribute="centerX" secondItem="MsB-mb-RmO" secondAttribute="centerX" id="zz5-GB-zgo"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblDay" destination="FWW-dT-UJi" id="fjr-wW-0Nc"/>
+                <outlet property="lblSectionTitle" destination="ydd-wT-AS7" id="8K8-u0-6ie"/>
+                <outlet property="topLine" destination="FD9-rC-vwZ" id="FKi-Nr-aM4"/>
+            </connections>
+            <point key="canvasLocation" x="378" y="306"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_time" width="33" height="33"/>
+    </resources>
+</document>

@@ -1,0 +1,686 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C42BDC8B721B22DCBC7435EC /* libPods-JATableCellNestTableDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EE2B6A76016F5335A9D50867 /* libPods-JATableCellNestTableDemo.a */; };
+		EC006B2A1D210BBC00146B6D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EC006B291D210BBC00146B6D /* main.m */; };
+		EC006B2D1D210BBC00146B6D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EC006B2C1D210BBC00146B6D /* AppDelegate.m */; };
+		EC006B331D210BBC00146B6D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC006B311D210BBC00146B6D /* Main.storyboard */; };
+		EC006B351D210BBC00146B6D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EC006B341D210BBC00146B6D /* Assets.xcassets */; };
+		EC006B381D210BBC00146B6D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC006B361D210BBC00146B6D /* LaunchScreen.storyboard */; };
+		EC006B431D210BBC00146B6D /* JATableCellNestTableDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC006B421D210BBC00146B6D /* JATableCellNestTableDemoTests.m */; };
+		EC006B4E1D210BBC00146B6D /* JATableCellNestTableDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EC006B4D1D210BBC00146B6D /* JATableCellNestTableDemoUITests.m */; };
+		EC006B5C1D210F5400146B6D /* Data.plist in Resources */ = {isa = PBXBuildFile; fileRef = EC006B5B1D210F5400146B6D /* Data.plist */; };
+		EC7EF73F1D23DC8E004FF960 /* JADataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF72E1D23DC8E004FF960 /* JADataModel.m */; };
+		EC7EF7401D23DC8E004FF960 /* JAHeaderFooterView.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF7311D23DC8E004FF960 /* JAHeaderFooterView.m */; };
+		EC7EF7411D23DC8E004FF960 /* JAHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7EF7321D23DC8E004FF960 /* JAHeaderFooterView.xib */; };
+		EC7EF7421D23DC8E004FF960 /* JALablelCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF7341D23DC8E004FF960 /* JALablelCell.m */; };
+		EC7EF7431D23DC8E004FF960 /* JALablelCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7EF7351D23DC8E004FF960 /* JALablelCell.xib */; };
+		EC7EF7441D23DC8E004FF960 /* JANestCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF7371D23DC8E004FF960 /* JANestCell.m */; };
+		EC7EF7451D23DC8E004FF960 /* JANestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7EF7381D23DC8E004FF960 /* JANestCell.xib */; };
+		EC7EF7461D23DC8E004FF960 /* JAPictureCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF73A1D23DC8E004FF960 /* JAPictureCell.m */; };
+		EC7EF7471D23DC8E004FF960 /* JAPictureCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EC7EF73B1D23DC8E004FF960 /* JAPictureCell.xib */; };
+		EC7EF7481D23DC8E004FF960 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EC7EF73E1D23DC8E004FF960 /* ViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EC006B3F1D210BBC00146B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC006B1D1D210BBB00146B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC006B241D210BBB00146B6D;
+			remoteInfo = JATableCellNestTableDemo;
+		};
+		EC006B4A1D210BBC00146B6D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EC006B1D1D210BBB00146B6D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EC006B241D210BBB00146B6D;
+			remoteInfo = JATableCellNestTableDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42538FE0F349CA6F9D400658 /* Pods-JATableCellNestTableDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATableCellNestTableDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-JATableCellNestTableDemo/Pods-JATableCellNestTableDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4E458978EB54E49519A6A64D /* Pods-JATableCellNestTableDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JATableCellNestTableDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-JATableCellNestTableDemo/Pods-JATableCellNestTableDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		EC006B251D210BBB00146B6D /* JATableCellNestTableDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JATableCellNestTableDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC006B291D210BBC00146B6D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EC006B2B1D210BBC00146B6D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EC006B2C1D210BBC00146B6D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EC006B321D210BBC00146B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EC006B341D210BBC00146B6D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EC006B371D210BBC00146B6D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EC006B391D210BBC00146B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC006B3E1D210BBC00146B6D /* JATableCellNestTableDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JATableCellNestTableDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC006B421D210BBC00146B6D /* JATableCellNestTableDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JATableCellNestTableDemoTests.m; sourceTree = "<group>"; };
+		EC006B441D210BBC00146B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC006B491D210BBC00146B6D /* JATableCellNestTableDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JATableCellNestTableDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC006B4D1D210BBC00146B6D /* JATableCellNestTableDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JATableCellNestTableDemoUITests.m; sourceTree = "<group>"; };
+		EC006B4F1D210BBC00146B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EC006B5B1D210F5400146B6D /* Data.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Data.plist; sourceTree = "<group>"; };
+		EC7EF72D1D23DC8E004FF960 /* JADataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JADataModel.h; sourceTree = "<group>"; };
+		EC7EF72E1D23DC8E004FF960 /* JADataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JADataModel.m; sourceTree = "<group>"; };
+		EC7EF7301D23DC8E004FF960 /* JAHeaderFooterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAHeaderFooterView.h; sourceTree = "<group>"; };
+		EC7EF7311D23DC8E004FF960 /* JAHeaderFooterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAHeaderFooterView.m; sourceTree = "<group>"; };
+		EC7EF7321D23DC8E004FF960 /* JAHeaderFooterView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JAHeaderFooterView.xib; sourceTree = "<group>"; };
+		EC7EF7331D23DC8E004FF960 /* JALablelCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JALablelCell.h; sourceTree = "<group>"; };
+		EC7EF7341D23DC8E004FF960 /* JALablelCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JALablelCell.m; sourceTree = "<group>"; };
+		EC7EF7351D23DC8E004FF960 /* JALablelCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JALablelCell.xib; sourceTree = "<group>"; };
+		EC7EF7361D23DC8E004FF960 /* JANestCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JANestCell.h; sourceTree = "<group>"; };
+		EC7EF7371D23DC8E004FF960 /* JANestCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JANestCell.m; sourceTree = "<group>"; };
+		EC7EF7381D23DC8E004FF960 /* JANestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JANestCell.xib; sourceTree = "<group>"; };
+		EC7EF7391D23DC8E004FF960 /* JAPictureCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAPictureCell.h; sourceTree = "<group>"; };
+		EC7EF73A1D23DC8E004FF960 /* JAPictureCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAPictureCell.m; sourceTree = "<group>"; };
+		EC7EF73B1D23DC8E004FF960 /* JAPictureCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = JAPictureCell.xib; sourceTree = "<group>"; };
+		EC7EF73D1D23DC8E004FF960 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EC7EF73E1D23DC8E004FF960 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EE2B6A76016F5335A9D50867 /* libPods-JATableCellNestTableDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JATableCellNestTableDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EC006B221D210BBB00146B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42BDC8B721B22DCBC7435EC /* libPods-JATableCellNestTableDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B3B1D210BBC00146B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B461D210BBC00146B6D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		357B077B2336BBE9A5570CB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE2B6A76016F5335A9D50867 /* libPods-JATableCellNestTableDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		655BACDDAF627FEB3C174A43 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4E458978EB54E49519A6A64D /* Pods-JATableCellNestTableDemo.debug.xcconfig */,
+				42538FE0F349CA6F9D400658 /* Pods-JATableCellNestTableDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		EC006B1C1D210BBB00146B6D = {
+			isa = PBXGroup;
+			children = (
+				EC006B271D210BBB00146B6D /* JATableCellNestTableDemo */,
+				EC006B411D210BBC00146B6D /* JATableCellNestTableDemoTests */,
+				EC006B4C1D210BBC00146B6D /* JATableCellNestTableDemoUITests */,
+				EC006B261D210BBB00146B6D /* Products */,
+				655BACDDAF627FEB3C174A43 /* Pods */,
+				357B077B2336BBE9A5570CB8 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EC006B261D210BBB00146B6D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EC006B251D210BBB00146B6D /* JATableCellNestTableDemo.app */,
+				EC006B3E1D210BBC00146B6D /* JATableCellNestTableDemoTests.xctest */,
+				EC006B491D210BBC00146B6D /* JATableCellNestTableDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EC006B271D210BBB00146B6D /* JATableCellNestTableDemo */ = {
+			isa = PBXGroup;
+			children = (
+				EC7EF72B1D23D75F004FF960 /* Classes */,
+				EC006B2B1D210BBC00146B6D /* AppDelegate.h */,
+				EC006B2C1D210BBC00146B6D /* AppDelegate.m */,
+				EC006B311D210BBC00146B6D /* Main.storyboard */,
+				EC006B5B1D210F5400146B6D /* Data.plist */,
+				EC006B341D210BBC00146B6D /* Assets.xcassets */,
+				EC006B361D210BBC00146B6D /* LaunchScreen.storyboard */,
+				EC006B391D210BBC00146B6D /* Info.plist */,
+				EC006B281D210BBC00146B6D /* Supporting Files */,
+			);
+			path = JATableCellNestTableDemo;
+			sourceTree = "<group>";
+		};
+		EC006B281D210BBC00146B6D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EC006B291D210BBC00146B6D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EC006B411D210BBC00146B6D /* JATableCellNestTableDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				EC006B421D210BBC00146B6D /* JATableCellNestTableDemoTests.m */,
+				EC006B441D210BBC00146B6D /* Info.plist */,
+			);
+			path = JATableCellNestTableDemoTests;
+			sourceTree = "<group>";
+		};
+		EC006B4C1D210BBC00146B6D /* JATableCellNestTableDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EC006B4D1D210BBC00146B6D /* JATableCellNestTableDemoUITests.m */,
+				EC006B4F1D210BBC00146B6D /* Info.plist */,
+			);
+			path = JATableCellNestTableDemoUITests;
+			sourceTree = "<group>";
+		};
+		EC7EF72B1D23D75F004FF960 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EC7EF72C1D23DC8E004FF960 /* Model */,
+				EC7EF72F1D23DC8E004FF960 /* View */,
+				EC7EF73C1D23DC8E004FF960 /* ViewController */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		EC7EF72C1D23DC8E004FF960 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EC7EF72D1D23DC8E004FF960 /* JADataModel.h */,
+				EC7EF72E1D23DC8E004FF960 /* JADataModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EC7EF72F1D23DC8E004FF960 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EC7EF7361D23DC8E004FF960 /* JANestCell.h */,
+				EC7EF7371D23DC8E004FF960 /* JANestCell.m */,
+				EC7EF7381D23DC8E004FF960 /* JANestCell.xib */,
+				EC7EF7331D23DC8E004FF960 /* JALablelCell.h */,
+				EC7EF7341D23DC8E004FF960 /* JALablelCell.m */,
+				EC7EF7351D23DC8E004FF960 /* JALablelCell.xib */,
+				EC7EF7391D23DC8E004FF960 /* JAPictureCell.h */,
+				EC7EF73A1D23DC8E004FF960 /* JAPictureCell.m */,
+				EC7EF73B1D23DC8E004FF960 /* JAPictureCell.xib */,
+				EC7EF7301D23DC8E004FF960 /* JAHeaderFooterView.h */,
+				EC7EF7311D23DC8E004FF960 /* JAHeaderFooterView.m */,
+				EC7EF7321D23DC8E004FF960 /* JAHeaderFooterView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EC7EF73C1D23DC8E004FF960 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				EC7EF73D1D23DC8E004FF960 /* ViewController.h */,
+				EC7EF73E1D23DC8E004FF960 /* ViewController.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EC006B241D210BBB00146B6D /* JATableCellNestTableDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC006B521D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemo" */;
+			buildPhases = (
+				B244637D1CA49BCD099F7ECB /* [CP] Check Pods Manifest.lock */,
+				EC006B211D210BBB00146B6D /* Sources */,
+				EC006B221D210BBB00146B6D /* Frameworks */,
+				EC006B231D210BBB00146B6D /* Resources */,
+				1004183F8F7ECF1AF191506F /* [CP] Embed Pods Frameworks */,
+				C6C061765BA6BBAE819403E4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JATableCellNestTableDemo;
+			productName = JATableCellNestTableDemo;
+			productReference = EC006B251D210BBB00146B6D /* JATableCellNestTableDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EC006B3D1D210BBC00146B6D /* JATableCellNestTableDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC006B551D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemoTests" */;
+			buildPhases = (
+				EC006B3A1D210BBC00146B6D /* Sources */,
+				EC006B3B1D210BBC00146B6D /* Frameworks */,
+				EC006B3C1D210BBC00146B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC006B401D210BBC00146B6D /* PBXTargetDependency */,
+			);
+			name = JATableCellNestTableDemoTests;
+			productName = JATableCellNestTableDemoTests;
+			productReference = EC006B3E1D210BBC00146B6D /* JATableCellNestTableDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EC006B481D210BBC00146B6D /* JATableCellNestTableDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EC006B581D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemoUITests" */;
+			buildPhases = (
+				EC006B451D210BBC00146B6D /* Sources */,
+				EC006B461D210BBC00146B6D /* Frameworks */,
+				EC006B471D210BBC00146B6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EC006B4B1D210BBC00146B6D /* PBXTargetDependency */,
+			);
+			name = JATableCellNestTableDemoUITests;
+			productName = JATableCellNestTableDemoUITests;
+			productReference = EC006B491D210BBC00146B6D /* JATableCellNestTableDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EC006B1D1D210BBB00146B6D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = littleBoy;
+				TargetAttributes = {
+					EC006B241D210BBB00146B6D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5C8SMFG9RN;
+					};
+					EC006B3D1D210BBC00146B6D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5C8SMFG9RN;
+						TestTargetID = EC006B241D210BBB00146B6D;
+					};
+					EC006B481D210BBC00146B6D = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 5C8SMFG9RN;
+						TestTargetID = EC006B241D210BBB00146B6D;
+					};
+				};
+			};
+			buildConfigurationList = EC006B201D210BBB00146B6D /* Build configuration list for PBXProject "JATableCellNestTableDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EC006B1C1D210BBB00146B6D;
+			productRefGroup = EC006B261D210BBB00146B6D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EC006B241D210BBB00146B6D /* JATableCellNestTableDemo */,
+				EC006B3D1D210BBC00146B6D /* JATableCellNestTableDemoTests */,
+				EC006B481D210BBC00146B6D /* JATableCellNestTableDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EC006B231D210BBB00146B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC006B381D210BBC00146B6D /* LaunchScreen.storyboard in Resources */,
+				EC7EF7471D23DC8E004FF960 /* JAPictureCell.xib in Resources */,
+				EC006B351D210BBC00146B6D /* Assets.xcassets in Resources */,
+				EC7EF7411D23DC8E004FF960 /* JAHeaderFooterView.xib in Resources */,
+				EC7EF7451D23DC8E004FF960 /* JANestCell.xib in Resources */,
+				EC006B5C1D210F5400146B6D /* Data.plist in Resources */,
+				EC7EF7431D23DC8E004FF960 /* JALablelCell.xib in Resources */,
+				EC006B331D210BBC00146B6D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B3C1D210BBC00146B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B471D210BBC00146B6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1004183F8F7ECF1AF191506F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATableCellNestTableDemo/Pods-JATableCellNestTableDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B244637D1CA49BCD099F7ECB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C6C061765BA6BBAE819403E4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-JATableCellNestTableDemo/Pods-JATableCellNestTableDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EC006B211D210BBB00146B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC7EF7421D23DC8E004FF960 /* JALablelCell.m in Sources */,
+				EC7EF73F1D23DC8E004FF960 /* JADataModel.m in Sources */,
+				EC7EF7481D23DC8E004FF960 /* ViewController.m in Sources */,
+				EC7EF7441D23DC8E004FF960 /* JANestCell.m in Sources */,
+				EC7EF7401D23DC8E004FF960 /* JAHeaderFooterView.m in Sources */,
+				EC006B2D1D210BBC00146B6D /* AppDelegate.m in Sources */,
+				EC7EF7461D23DC8E004FF960 /* JAPictureCell.m in Sources */,
+				EC006B2A1D210BBC00146B6D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B3A1D210BBC00146B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC006B431D210BBC00146B6D /* JATableCellNestTableDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EC006B451D210BBC00146B6D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC006B4E1D210BBC00146B6D /* JATableCellNestTableDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EC006B401D210BBC00146B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC006B241D210BBB00146B6D /* JATableCellNestTableDemo */;
+			targetProxy = EC006B3F1D210BBC00146B6D /* PBXContainerItemProxy */;
+		};
+		EC006B4B1D210BBC00146B6D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EC006B241D210BBB00146B6D /* JATableCellNestTableDemo */;
+			targetProxy = EC006B4A1D210BBC00146B6D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EC006B311D210BBC00146B6D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC006B321D210BBC00146B6D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EC006B361D210BBC00146B6D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EC006B371D210BBC00146B6D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EC006B501D210BBC00146B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EC006B511D210BBC00146B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EC006B531D210BBC00146B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E458978EB54E49519A6A64D /* Pods-JATableCellNestTableDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JATableCellNestTableDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EC006B541D210BBC00146B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 42538FE0F349CA6F9D400658 /* Pods-JATableCellNestTableDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = JATableCellNestTableDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		EC006B561D210BBC00146B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JATableCellNestTableDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JATableCellNestTableDemo.app/JATableCellNestTableDemo";
+			};
+			name = Debug;
+		};
+		EC006B571D210BBC00146B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = JATableCellNestTableDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JATableCellNestTableDemo.app/JATableCellNestTableDemo";
+			};
+			name = Release;
+		};
+		EC006B591D210BBC00146B6D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JATableCellNestTableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JATableCellNestTableDemo;
+			};
+			name = Debug;
+		};
+		EC006B5A1D210BBC00146B6D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = JATableCellNestTableDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = littleBoy.JATableCellNestTableDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = JATableCellNestTableDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EC006B201D210BBB00146B6D /* Build configuration list for PBXProject "JATableCellNestTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC006B501D210BBC00146B6D /* Debug */,
+				EC006B511D210BBC00146B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC006B521D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC006B531D210BBC00146B6D /* Debug */,
+				EC006B541D210BBC00146B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC006B551D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC006B561D210BBC00146B6D /* Debug */,
+				EC006B571D210BBC00146B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EC006B581D210BBC00146B6D /* Build configuration list for PBXNativeTarget "JATableCellNestTableDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EC006B591D210BBC00146B6D /* Debug */,
+				EC006B5A1D210BBC00146B6D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EC006B1D1D210BBB00146B6D /* Project object */;
+}

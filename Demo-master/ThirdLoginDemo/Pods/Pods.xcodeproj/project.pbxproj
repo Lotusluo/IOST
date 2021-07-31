@@ -1,0 +1,357 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8A87EE259460A1889B86394C67C63CA8 /* Pods-ThirdLoginDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 141DAE36DE84EC2285417CC9F71FA1C5 /* Pods-ThirdLoginDemo-dummy.m */; };
+		C7592FBE7B9291590A82968D1C7BEE61 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		05F30BB85053F7AB53EA722E2CB9FA96 /* WeiboSDK.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = WeiboSDK.bundle; path = libWeiboSDK/WeiboSDK.bundle; sourceTree = "<group>"; };
+		085D3CA0C07AEFD1FD58DA47BB35AA16 /* WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboUser.h; path = libWeiboSDK/WeiboUser.h; sourceTree = "<group>"; };
+		08F8855C0A168459A253897F0E36829A /* libWeiboSDK.a */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = archive.ar; name = libWeiboSDK.a; path = libWeiboSDK/libWeiboSDK.a; sourceTree = "<group>"; };
+		13ADC47C2C1447A0D62BC7116061BAF3 /* Pods-ThirdLoginDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThirdLoginDemo-resources.sh"; sourceTree = "<group>"; };
+		141DAE36DE84EC2285417CC9F71FA1C5 /* Pods-ThirdLoginDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ThirdLoginDemo-dummy.m"; sourceTree = "<group>"; };
+		20AF83E1FD55676D9DD0209373CCB1DB /* WBHttpRequest.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBHttpRequest.h; path = libWeiboSDK/WBHttpRequest.h; sourceTree = "<group>"; };
+		237B351899E334A71A45E8974F6E080B /* Pods-ThirdLoginDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ThirdLoginDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		2CCE69A13C43DFDA1A1FD397A56C8610 /* Pods-ThirdLoginDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ThirdLoginDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		4C755F1755CE66D5105A7B8A64D25533 /* WBHttpRequest+WeiboGame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboGame.h"; path = "libWeiboSDK/WBHttpRequest+WeiboGame.h"; sourceTree = "<group>"; };
+		52CAF7CE9DFFFE7938717959B466761E /* Pods-ThirdLoginDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ThirdLoginDemo-frameworks.sh"; sourceTree = "<group>"; };
+		53A9A701C91E7EE1F83AD960AEE8C1FA /* WBHttpRequest+WeiboShare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboShare.h"; path = "libWeiboSDK/WBHttpRequest+WeiboShare.h"; sourceTree = "<group>"; };
+		7B22E299BC51C36FB4AA6F8DA86EBBB3 /* libPods-ThirdLoginDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ThirdLoginDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		91CBC4D4086A0C8A790C7D0F55E089DC /* WBSDKBasicButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKBasicButton.h; path = libWeiboSDK/WBSDKBasicButton.h; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9F93FC048199570B4884151486797F25 /* WeiboSDK+Statistics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WeiboSDK+Statistics.h"; path = "libWeiboSDK/WeiboSDK+Statistics.h"; sourceTree = "<group>"; };
+		A173D340E1A1A7B5AE6142AF8B4891AC /* WBHttpRequest+WeiboUser.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboUser.h"; path = "libWeiboSDK/WBHttpRequest+WeiboUser.h"; sourceTree = "<group>"; };
+		AEFFC94A1088EDB8D6832033F55E8B25 /* WeiboSDK.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WeiboSDK.h; path = libWeiboSDK/WeiboSDK.h; sourceTree = "<group>"; };
+		BDBC854BE51B873C1791350FF21166AC /* Pods-ThirdLoginDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdLoginDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		CAA1C4A0D9690037F01873CF097ABB17 /* Pods-ThirdLoginDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ThirdLoginDemo.release.xcconfig"; sourceTree = "<group>"; };
+		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D92DA83616883CF123582EB383CAA301 /* WBSDKCommentButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKCommentButton.h; path = libWeiboSDK/WBSDKCommentButton.h; sourceTree = "<group>"; };
+		E22401829DD85521C126ED6DBD3190C2 /* WBSDKRelationshipButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = WBSDKRelationshipButton.h; path = libWeiboSDK/WBSDKRelationshipButton.h; sourceTree = "<group>"; };
+		F0E44E7D1ACCC765FB4A35E0474FBAEA /* WBHttpRequest+WeiboToken.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "WBHttpRequest+WeiboToken.h"; path = "libWeiboSDK/WBHttpRequest+WeiboToken.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		92B8E9F34090937CB9D802F6F973849C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C7592FBE7B9291590A82968D1C7BEE61 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0429E2F4895859D1F1C0EEE136EAB23A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D362B278AB420F2B678DC4B5AF16AD98 /* WeiboSDK */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		09EE4A6D1DA2C18E5C4A86E5DE09B976 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				05F30BB85053F7AB53EA722E2CB9FA96 /* WeiboSDK.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		3CBC676350551492E0D0A15814FC2951 /* Pods-ThirdLoginDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2CCE69A13C43DFDA1A1FD397A56C8610 /* Pods-ThirdLoginDemo-acknowledgements.markdown */,
+				237B351899E334A71A45E8974F6E080B /* Pods-ThirdLoginDemo-acknowledgements.plist */,
+				141DAE36DE84EC2285417CC9F71FA1C5 /* Pods-ThirdLoginDemo-dummy.m */,
+				52CAF7CE9DFFFE7938717959B466761E /* Pods-ThirdLoginDemo-frameworks.sh */,
+				13ADC47C2C1447A0D62BC7116061BAF3 /* Pods-ThirdLoginDemo-resources.sh */,
+				BDBC854BE51B873C1791350FF21166AC /* Pods-ThirdLoginDemo.debug.xcconfig */,
+				CAA1C4A0D9690037F01873CF097ABB17 /* Pods-ThirdLoginDemo.release.xcconfig */,
+			);
+			name = "Pods-ThirdLoginDemo";
+			path = "Target Support Files/Pods-ThirdLoginDemo";
+			sourceTree = "<group>";
+		};
+		3D94E983F793F90F0AFC678C7F227E56 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				3CBC676350551492E0D0A15814FC2951 /* Pods-ThirdLoginDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				0429E2F4895859D1F1C0EEE136EAB23A /* Pods */,
+				8B2B244457378BB4001F3298584C1EC6 /* Products */,
+				3D94E983F793F90F0AFC678C7F227E56 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8B2B244457378BB4001F3298584C1EC6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7B22E299BC51C36FB4AA6F8DA86EBBB3 /* libPods-ThirdLoginDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D362B278AB420F2B678DC4B5AF16AD98 /* WeiboSDK */ = {
+			isa = PBXGroup;
+			children = (
+				20AF83E1FD55676D9DD0209373CCB1DB /* WBHttpRequest.h */,
+				4C755F1755CE66D5105A7B8A64D25533 /* WBHttpRequest+WeiboGame.h */,
+				53A9A701C91E7EE1F83AD960AEE8C1FA /* WBHttpRequest+WeiboShare.h */,
+				F0E44E7D1ACCC765FB4A35E0474FBAEA /* WBHttpRequest+WeiboToken.h */,
+				A173D340E1A1A7B5AE6142AF8B4891AC /* WBHttpRequest+WeiboUser.h */,
+				91CBC4D4086A0C8A790C7D0F55E089DC /* WBSDKBasicButton.h */,
+				D92DA83616883CF123582EB383CAA301 /* WBSDKCommentButton.h */,
+				E22401829DD85521C126ED6DBD3190C2 /* WBSDKRelationshipButton.h */,
+				AEFFC94A1088EDB8D6832033F55E8B25 /* WeiboSDK.h */,
+				9F93FC048199570B4884151486797F25 /* WeiboSDK+Statistics.h */,
+				085D3CA0C07AEFD1FD58DA47BB35AA16 /* WeiboUser.h */,
+				E05341705F4A8525931A7B6A3399ED73 /* Frameworks */,
+				09EE4A6D1DA2C18E5C4A86E5DE09B976 /* Resources */,
+			);
+			path = WeiboSDK;
+			sourceTree = "<group>";
+		};
+		E05341705F4A8525931A7B6A3399ED73 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				08F8855C0A168459A253897F0E36829A /* libWeiboSDK.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		89CC3B56138B0859EE27FBE00F333535 /* Pods-ThirdLoginDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF56472BB535A5D90EDEE21AF4A56160 /* Build configuration list for PBXNativeTarget "Pods-ThirdLoginDemo" */;
+			buildPhases = (
+				A9B5EEA4786698148B8665A53ACB9D59 /* Sources */,
+				92B8E9F34090937CB9D802F6F973849C /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-ThirdLoginDemo";
+			productName = "Pods-ThirdLoginDemo";
+			productReference = 7B22E299BC51C36FB4AA6F8DA86EBBB3 /* libPods-ThirdLoginDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 8B2B244457378BB4001F3298584C1EC6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				89CC3B56138B0859EE27FBE00F333535 /* Pods-ThirdLoginDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A9B5EEA4786698148B8665A53ACB9D59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8A87EE259460A1889B86394C67C63CA8 /* Pods-ThirdLoginDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F92B34BB20125BF090D5ABA3C3F90BD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDBC854BE51B873C1791350FF21166AC /* Pods-ThirdLoginDemo.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		3FA2475660FFC880302AD18E29B2E5FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		D720139884F6D6B7DF004DEBF5316AB4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CAA1C4A0D9690037F01873CF097ABB17 /* Pods-ThirdLoginDemo.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		F325026B55060D3B22BEC0BAB5FA7344 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3FA2475660FFC880302AD18E29B2E5FC /* Debug */,
+				F325026B55060D3B22BEC0BAB5FA7344 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF56472BB535A5D90EDEE21AF4A56160 /* Build configuration list for PBXNativeTarget "Pods-ThirdLoginDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F92B34BB20125BF090D5ABA3C3F90BD /* Debug */,
+				D720139884F6D6B7DF004DEBF5316AB4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,5 @@
+platform :ios, '7.0'
+
+target "ThirdLoginDemo" do
+pod "WeiboSDK", :git => "https://github.com/sinaweibosdk/weibo_ios_sdk.git"
+end

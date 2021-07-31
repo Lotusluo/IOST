@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="OptionCell" rowHeight="45" id="IvN-zX-zWS" customClass="OptionCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="IvN-zX-zWS" id="uTs-bt-WSA">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="45"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="uDy-UT-baF" userLabel="icon">
+                        <rect key="frame" x="16" y="7.5" width="30" height="30"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="WCJ-3I-71K"/>
+                            <constraint firstAttribute="width" constant="30" id="gQb-jP-DTD"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yvo-87-itU" userLabel="选项文本">
+                        <rect key="frame" x="46" y="12.5" width="228" height="20"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <color key="textColor" systemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="selection" translatesAutoresizingMaskIntoConstraints="NO" id="X1S-mi-eON" userLabel="勾选图片">
+                        <rect key="frame" x="274" y="15.5" width="14" height="14"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="14" id="VjK-Hd-j7t"/>
+                            <constraint firstAttribute="width" constant="14" id="jsK-EG-ctu"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="uDy-UT-baF" firstAttribute="leading" secondItem="uTs-bt-WSA" secondAttribute="leading" constant="16" id="IVD-6W-7JU"/>
+                    <constraint firstAttribute="centerY" secondItem="uDy-UT-baF" secondAttribute="centerY" id="ItQ-yJ-VFG"/>
+                    <constraint firstAttribute="centerY" secondItem="Yvo-87-itU" secondAttribute="centerY" id="NQf-Ld-3CQ"/>
+                    <constraint firstItem="Yvo-87-itU" firstAttribute="leading" secondItem="uDy-UT-baF" secondAttribute="trailing" id="Ono-Oj-cwg"/>
+                    <constraint firstItem="X1S-mi-eON" firstAttribute="leading" secondItem="Yvo-87-itU" secondAttribute="trailing" id="QyI-F5-0bw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="X1S-mi-eON" secondAttribute="trailing" constant="16" id="RlX-cF-qsL"/>
+                    <constraint firstAttribute="centerY" secondItem="X1S-mi-eON" secondAttribute="centerY" id="Ywh-bf-jXX"/>
+                    <constraint firstItem="X1S-mi-eON" firstAttribute="leading" secondItem="Yvo-87-itU" secondAttribute="trailing" id="uQL-gQ-YyQ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImageView" destination="uDy-UT-baF" id="rBB-QD-A1a"/>
+                <outlet property="optionLabel" destination="Yvo-87-itU" id="Gsn-VW-MlL"/>
+                <outlet property="selectionImageView" destination="X1S-mi-eON" id="aqJ-tP-7Ex"/>
+            </connections>
+            <point key="canvasLocation" x="497.10144927536237" y="130.24553571428572"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="selection" width="10" height="16"/>
+        <systemColor name="darkTextColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

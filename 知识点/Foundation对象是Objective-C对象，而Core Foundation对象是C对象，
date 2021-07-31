@@ -1,0 +1,13 @@
+Foundation对象是Objective-C对象，而Core Foundation对象是C对象，二者比较相似，Foundation下的类基本都是NS开头，Core Foundation下的类基本是CF开头的。
+
+ 
+
+这里说一下两者在iOS中的内存管理问题，以前在MRC情况下，都是开发人员手动管理对象内存，二者区别不大。但在ARC情况下，由于Foundation框架是OC对象，所以由系统自动管理内存，而Core Foundation框架是C对象，所以需要开发人员手动管理内存，不然会引起内存泄露。
+
+ 
+
+在ARC下，可以对两个框架的类进行相互转换，以NSString为例，有与之对应的CFStringRef，两者之间可以通过__bridge、__bridge_transfer、__bridge_retained转换：
+
+__bridge：用于NSString与CFStringRef相互转换，不改变对象的管理权所有者，按照本来对象的内存管理。本来是NSString，转换为CFStringRef类型，依旧由系统管理；本来是CFStringRef，转换为NSString，由开发人员管理。
+__bridge_transfer：用于CFStringRef转换成NSString，进行管理权移交，由系统自动管理。
+__bridge_retained：用于NSString转换成CFStringRef，剥夺了ARC管理权，需要开发人员手动管理。

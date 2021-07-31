@@ -1,0 +1,382 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6442D1501B16EB7B00FFEA85 /* ScanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6442D14C1B16EB7B00FFEA85 /* ScanController.m */; };
+		6442D1511B16EB7B00FFEA85 /* DeviceController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6442D14E1B16EB7B00FFEA85 /* DeviceController.m */; };
+		6463A5E21B0DBF54001FBE30 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A5E11B0DBF54001FBE30 /* main.m */; };
+		6463A5E51B0DBF54001FBE30 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6463A5E41B0DBF54001FBE30 /* AppDelegate.m */; };
+		6463A5EB1B0DBF54001FBE30 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6463A5E91B0DBF54001FBE30 /* Main.storyboard */; };
+		6463A5ED1B0DBF54001FBE30 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6463A5EC1B0DBF54001FBE30 /* Images.xcassets */; };
+		6463A6061B0DC165001FBE30 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6463A6051B0DC165001FBE30 /* CoreBluetooth.framework */; };
+		F30E4149266E29FB00650860 /* SBluetoothClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F30E4148266E29FB00650860 /* SBluetoothClient.m */; };
+		F30E414D266E30E000650860 /* LeDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = F30E414C266E30E000650860 /* LeDevice.m */; };
+		F3341F79266DCAB700E4B54F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3341F78266DCAB700E4B54F /* LaunchScreen.xib */; };
+		F3341F7C266DCABF00E4B54F /* Loading.m in Sources */ = {isa = PBXBuildFile; fileRef = F3341F7B266DCABE00E4B54F /* Loading.m */; };
+		F3FBF32B266F377600A58F2C /* WifiInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = F3FBF32A266F377600A58F2C /* WifiInfo.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		6442D14B1B16EB7B00FFEA85 /* ScanController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanController.h; sourceTree = "<group>"; };
+		6442D14C1B16EB7B00FFEA85 /* ScanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanController.m; sourceTree = "<group>"; };
+		6442D14D1B16EB7B00FFEA85 /* DeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceController.h; sourceTree = "<group>"; };
+		6442D14E1B16EB7B00FFEA85 /* DeviceController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceController.m; sourceTree = "<group>"; };
+		6463A5DC1B0DBF54001FBE30 /* blesdkdemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = blesdkdemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6463A5E01B0DBF54001FBE30 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6463A5E11B0DBF54001FBE30 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6463A5E31B0DBF54001FBE30 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6463A5E41B0DBF54001FBE30 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6463A5EA1B0DBF54001FBE30 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6463A5EC1B0DBF54001FBE30 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		6463A5F51B0DBF54001FBE30 /* blesdkdemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = blesdkdemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6463A6051B0DC165001FBE30 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		F30E4147266E29FB00650860 /* SBluetoothClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBluetoothClient.h; sourceTree = "<group>"; };
+		F30E4148266E29FB00650860 /* SBluetoothClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBluetoothClient.m; sourceTree = "<group>"; };
+		F30E414B266E30E000650860 /* LeDevice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LeDevice.h; sourceTree = "<group>"; };
+		F30E414C266E30E000650860 /* LeDevice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LeDevice.m; sourceTree = "<group>"; };
+		F3341F78266DCAB700E4B54F /* LaunchScreen.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
+		F3341F7A266DCABE00E4B54F /* Loading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Loading.h; sourceTree = "<group>"; };
+		F3341F7B266DCABE00E4B54F /* Loading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Loading.m; sourceTree = "<group>"; };
+		F3FBF329266F377600A58F2C /* WifiInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WifiInfo.h; sourceTree = "<group>"; };
+		F3FBF32A266F377600A58F2C /* WifiInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WifiInfo.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6463A5D91B0DBF54001FBE30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A6061B0DC165001FBE30 /* CoreBluetooth.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6463A5D31B0DBF54001FBE30 = {
+			isa = PBXGroup;
+			children = (
+				6463A6051B0DC165001FBE30 /* CoreBluetooth.framework */,
+				6463A5DE1B0DBF54001FBE30 /* blesdkdemo */,
+				6463A5DD1B0DBF54001FBE30 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6463A5DD1B0DBF54001FBE30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6463A5DC1B0DBF54001FBE30 /* blesdkdemo.app */,
+				6463A5F51B0DBF54001FBE30 /* blesdkdemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6463A5DE1B0DBF54001FBE30 /* blesdkdemo */ = {
+			isa = PBXGroup;
+			children = (
+				F30E4146266E29EE00650860 /* blesdk */,
+				F3341F7A266DCABE00E4B54F /* Loading.h */,
+				F3341F7B266DCABE00E4B54F /* Loading.m */,
+				F3341F78266DCAB700E4B54F /* LaunchScreen.xib */,
+				6463A5E31B0DBF54001FBE30 /* AppDelegate.h */,
+				6463A5E41B0DBF54001FBE30 /* AppDelegate.m */,
+				6463A5E91B0DBF54001FBE30 /* Main.storyboard */,
+				6463A5EC1B0DBF54001FBE30 /* Images.xcassets */,
+				6442D14B1B16EB7B00FFEA85 /* ScanController.h */,
+				6442D14C1B16EB7B00FFEA85 /* ScanController.m */,
+				6442D14D1B16EB7B00FFEA85 /* DeviceController.h */,
+				6442D14E1B16EB7B00FFEA85 /* DeviceController.m */,
+				6463A5DF1B0DBF54001FBE30 /* Supporting Files */,
+			);
+			path = blesdkdemo;
+			sourceTree = "<group>";
+		};
+		6463A5DF1B0DBF54001FBE30 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				6463A5E01B0DBF54001FBE30 /* Info.plist */,
+				6463A5E11B0DBF54001FBE30 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F30E4146266E29EE00650860 /* blesdk */ = {
+			isa = PBXGroup;
+			children = (
+				F30E414A266E303700650860 /* bean */,
+				F30E4147266E29FB00650860 /* SBluetoothClient.h */,
+				F30E4148266E29FB00650860 /* SBluetoothClient.m */,
+			);
+			name = blesdk;
+			sourceTree = "<group>";
+		};
+		F30E414A266E303700650860 /* bean */ = {
+			isa = PBXGroup;
+			children = (
+				F30E414B266E30E000650860 /* LeDevice.h */,
+				F30E414C266E30E000650860 /* LeDevice.m */,
+				F3FBF329266F377600A58F2C /* WifiInfo.h */,
+				F3FBF32A266F377600A58F2C /* WifiInfo.m */,
+			);
+			name = bean;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6463A5DB1B0DBF54001FBE30 /* blesdkdemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6463A5FF1B0DBF54001FBE30 /* Build configuration list for PBXNativeTarget "blesdkdemo" */;
+			buildPhases = (
+				6463A5D81B0DBF54001FBE30 /* Sources */,
+				6463A5D91B0DBF54001FBE30 /* Frameworks */,
+				6463A5DA1B0DBF54001FBE30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = blesdkdemo;
+			productName = blesdkdemo;
+			productReference = 6463A5DC1B0DBF54001FBE30 /* blesdkdemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6463A5D41B0DBF54001FBE30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = shen;
+				TargetAttributes = {
+					6463A5DB1B0DBF54001FBE30 = {
+						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 79X5S2QGW5;
+					};
+				};
+			};
+			buildConfigurationList = 6463A5D71B0DBF54001FBE30 /* Build configuration list for PBXProject "blesdkdemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6463A5D31B0DBF54001FBE30;
+			productRefGroup = 6463A5DD1B0DBF54001FBE30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6463A5DB1B0DBF54001FBE30 /* blesdkdemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6463A5DA1B0DBF54001FBE30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6463A5EB1B0DBF54001FBE30 /* Main.storyboard in Resources */,
+				F3341F79266DCAB700E4B54F /* LaunchScreen.xib in Resources */,
+				6463A5ED1B0DBF54001FBE30 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6463A5D81B0DBF54001FBE30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6442D1511B16EB7B00FFEA85 /* DeviceController.m in Sources */,
+				6463A5E51B0DBF54001FBE30 /* AppDelegate.m in Sources */,
+				F3341F7C266DCABF00E4B54F /* Loading.m in Sources */,
+				F30E4149266E29FB00650860 /* SBluetoothClient.m in Sources */,
+				6463A5E21B0DBF54001FBE30 /* main.m in Sources */,
+				F30E414D266E30E000650860 /* LeDevice.m in Sources */,
+				F3FBF32B266F377600A58F2C /* WifiInfo.m in Sources */,
+				6442D1501B16EB7B00FFEA85 /* ScanController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		6463A5E91B0DBF54001FBE30 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6463A5EA1B0DBF54001FBE30 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6463A5FD1B0DBF54001FBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		6463A5FE1B0DBF54001FBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6463A6001B0DBF54001FBE30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79X5S2QGW5;
+				INFOPLIST_FILE = blesdkdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartwasp.blenet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		6463A6011B0DBF54001FBE30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 79X5S2QGW5;
+				INFOPLIST_FILE = blesdkdemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.smartwasp.blenet;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6463A5D71B0DBF54001FBE30 /* Build configuration list for PBXProject "blesdkdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6463A5FD1B0DBF54001FBE30 /* Debug */,
+				6463A5FE1B0DBF54001FBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6463A5FF1B0DBF54001FBE30 /* Build configuration list for PBXNativeTarget "blesdkdemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6463A6001B0DBF54001FBE30 /* Debug */,
+				6463A6011B0DBF54001FBE30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6463A5D41B0DBF54001FBE30 /* Project object */;
+}

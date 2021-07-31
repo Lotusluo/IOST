@@ -1,0 +1,13 @@
+platform :ios, '10.1'
+workspace 'iflyosSDK.xcworkspace'
+inhibit_all_warnings!
+use_frameworks!
+
+target 'iflyosSDKDemo' do
+    project 'iflyosSDKDemo/iflyosSDKDemo.xcodeproj'
+    pod 'AFNetworking'
+    pod 'MJExtension'
+    pod 'XMLReader-PPTV'
+    pod 'WebViewJavascriptBridge'
+    pod 'SocketRocket'
+end

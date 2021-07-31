@@ -1,0 +1,20 @@
+
+1、关于weakSelf的声明.
+
+__weak typeof(self) weakSelf = self;
+
+或者定义成宏#define WeakSelf __weak typeof(self)weakSelf = self;
+
+#define WS(weakSelf) __weak typeof(self)weakSelf = self;
+
+#define WS(weakSelf) __weak __typeof(&*self)weakSelf = self;
+
+2、关于typeof()关键字
+
+typeof()是为了判断括号里边的类型。例如typeof(int)得出来的类型就是int类型
+
+int a = 10等价于typeof(int) a = 10;
+
+同理typeof(self) 得就来的就是self 的类型。可以动态判断类型。当然如果self是UIViewController 写成__weak UIViewController *self = self;也可以不过就显得很笨重;
+
+3、关于__typeof(self) 和typeof(self)以及__typeof(&*self)的区别现在貌似没什么区别具体不懂。都可以。

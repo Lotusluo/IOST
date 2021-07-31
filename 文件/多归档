@@ -1,0 +1,116 @@
+使用archiveRootObject:toFile:方法可以将一个对象直接写入到一个文件中，但有时候可能想将多个对象写入到同一个文件中，那么就要使用NSData来进行归档对象。
+
+NSData可以为一些数据提供临时存储空间，以便随后写入文件，或者存放从磁盘读取的文件内容。可以使用[NSMutableData data]创建可变数据空间。
+
+
+
+2、归档2个Person对象到同一文件中
+
+归档（编码）：
+
+// 新建一块可变数据区
+
+NSMutableData *data = [NSMutableData data];
+
+ 
+
+// 将数据区连接到一个NSKeyedArchiver对象
+
+NSKeyedArchiver *archiver = [[[NSKeyedArchiver alloc] initForWritingWithMutableData:data] autorelease];
+
+ 
+
+// 开始存档对象，存档的数据都会存储到NSMutableData中
+
+[archiver encodeObject:person1 forKey:@"person1"];
+
+[archiver encodeObject:person2 forKey:@"person2"];
+
+ 
+
+// 存档完毕(一定要调用这个方法)
+
+[archiver finishEncoding];
+
+ 
+
+// 将存档的数据写入文件
+
+[data writeToFile:path atomically:YES];
+
+3、从同一文件中恢复2个Person对象
+
+恢复（解码）：
+
+// 从文件中读取数据
+
+NSData *data = [NSData dataWithContentsOfFile:path];
+
+ 
+
+// 根据数据，解析成一个NSKeyedUnarchiver对象
+
+NSKeyedUnarchiver *unarchiver = [[NSKeyedUnarchiver alloc] initForReadingWithData:data];
+
+Person *person1 = [unarchiver decodeObjectForKey:@"person1"];
+
+Person *person2 = [unarchiver decodeObjectForKey:@"person2"];
+
+ 
+
+// 恢复完毕
+
+[unarchiver finishDecoding];
+
+4、利用归档实现深复制
+
+比如对一个Person对象进行深复制：
+
+// 临时存储person1的数据
+
+NSData *data =
+
+[NSKeyedArchiver archivedDataWithRootObject:person1];
+
+ 
+
+// 解析data，生成一个新的Person对象
+
+Student *person2 =
+
+[NSKeyedUnarchiver unarchiveObjectWithData:data];
+
+// 分别打印内存地址
+
+NSLog(@"person1:0x%x", person1); // person1:0x7177a60
+
+NSLog(@"person2:0x%x", person2); // person2:0x7177cf0
+
+
+
+一般来说，后台接口参数有中文是使用utf-8编码转换的，但是有时候后台就不用，比如使用ISO-8859-1，但是iOS的字符串不能直接使用方法，像utf-8那么方便了，对应编码的枚举并不在NSString这个类里，而是在CFString里，我这个小白还是第一次接触这个，发现网上的资料也不是很多（只是百度，不翻墙），好不容易搞定了，特此做个记录，代码不多，只有两行
+
+NSString  转 ISO-8859-1
+
++ (NSString *)unicode2ISO88591:(NSString *)string {
+
+NSStringEncoding enc =      CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingISOLatin1);
+
+return [NSString stringWithCString:[string UTF8String] encoding:enc];
+
+}
+使用[string UTF8String]是因为需要C格式的字符串，类似的，此方法可以转换其他不能用字符串对象直接转换的编码格式
+
+ISO-8859-1 转 NSString 
+
+//定义ISO-8859-1编码格式
+
+NSStringEncoding enc = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingISOLatin1);
+
+//ISO-8859-1格式接收数据并进行转换
+
+NSString *retStr = [[NSString alloc]initWithData:value encoding:enc];
+
+NSData*resultData = [retStr dataUsingEncoding:enc];
+
+NSArray *resultArr = [NSJSONSerialization JSONObjectWithData:resultData options:NSJSONReadingAllowFragments error:nil];

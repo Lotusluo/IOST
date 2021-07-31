@@ -1,0 +1,6 @@
+framework module XMLReader_PPTV {
+  umbrella header "XMLReader-PPTV-umbrella.h"
+
+  export *
+  module * { export * }
+}

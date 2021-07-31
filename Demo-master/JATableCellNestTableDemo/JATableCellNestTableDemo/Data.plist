@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>outday</key>
+		<string>第一天</string>
+		<key>title</key>
+		<string>苏州观前街  07:00 交通  08:30 参观景点：苏州观前街 （游览观前步行街，品美食，看美女）11:30 用餐 （享受苏州美食）17:30 入住</string>
+		<key>dayjourney</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>0</string>
+				<key>theme</key>
+				<string>07:30 交通</string>
+				<key>content</key>
+				<string>xx地点集合</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>1</string>
+				<key>theme</key>
+				<string>08:30 参观景点：苏州观前街 （游览观前步行街，品美食，看美女）</string>
+				<key>content</key>
+				<string>观前街因其地处玄妙观前而得名，它的得名迄今已有150多年的历史，一直以汇集稻香村、乾泰祥、黄天源等多家名优特色的百年老店而名满天下。</string>
+				<key>journeyrange</key>
+				<array>
+					<string>活动时间：1小时</string>
+					<string>行程距离：1公里</string>
+				</array>
+				<key>picurls</key>
+				<array>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/09/01/11/o9GhWR.jpg</string>
+					</dict>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/11/27/16/kUDzdc.jpg</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>2</string>
+				<key>theme</key>
+				<string>11:30 用餐 （享受苏州美食）</string>
+				<key>content</key>
+				<string>享用晚餐，费用自理</string>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>3</string>
+				<key>theme</key>
+				<string>17:30 入住</string>
+				<key>content</key>
+				<string>双人标准间 （参考酒店：世纪盛业、江南水会、海怡、首南、宁和豪景、月湖大酒店）</string>
+			</dict>
+		</array>
+	</dict>
+	<dict>
+		<key>outday</key>
+		<string>第二天</string>
+		<key>title</key>
+		<string>早7点--8点，苏州四环线内可接。导游出行前一天会通知客人上车点。苏州平齐路莫泰酒店集合，前往拙政园；-拙政园：一步一景-狮子林-寒山寺：新年听钟，祈福-七里山塘：自在漫步-姑苏水上游-虎丘：沧海桑田，浮华看尽</string>
+		<key>dayjourney</key>
+		<array>
+			<dict>
+				<key>type</key>
+				<string>0</string>
+				<key>theme</key>
+				<string>08:00 交通</string>
+				<key>content</key>
+				<string>早7点--8点，苏州四环线内可接。导游出行前一天会通知客人上车点。苏州平齐路莫泰酒店集合，前往拙政园</string>
+				<key>picurls</key>
+				<array>
+					<dict>
+						<key>img</key>
+						<string>http://pic4.40017.cn/shortTour/2016/05/27/10/yqzVIs.png</string>
+					</dict>
+					<dict>
+						<key>img</key>
+						<string>http://pic4.40017.cn/shortTour/2016/04/13/13/AHxjne.png</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>1</string>
+				<key>theme</key>
+				<string>08:40 参观景点：拙政园：一步一景</string>
+				<key>content</key>
+				<string>拙政园是江南古典园林的代表作品,与北京颐和园、承德避暑山庄、苏州留园一起被誉为中国四大名园。 整个园林的设计十分精巧，游览起来可以说是“一步一景”，处处体现着江南水乡的雅致韵味。</string>
+				<key>journeyrange</key>
+				<array>
+					<string>活动时间：1小时30分钟</string>
+				</array>
+				<key>picurls</key>
+				<array>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2016/02/01/11/3NVGxg.jpg</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>1</string>
+				<key>theme</key>
+				<string>10:20 参观景点：狮子林</string>
+				<key>content</key>
+				<string>来到清幽风雅的狮子林，尽情漫步悠游~狮子林为苏州四大名园之一，至今已有672多年的历史，以“假山王国”闻名于世，假山群共有九条路线，21个洞口，漫步穿行其间，巧夺天工。</string>
+				<key>journeyrange</key>
+				<array>
+					<string>活动时间：1小时</string>
+				</array>
+				<key>picurls</key>
+				<array>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/10/13/14/RUYQqZ.jpg</string>
+					</dict>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/10/13/14/VriB63.jpg</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>2</string>
+				<key>theme</key>
+				<string>11:30 用餐 （享受苏州美食）</string>
+				<key>content</key>
+				<string>午餐自理，小伙伴们可以自行出动搜罗美食了~</string>
+				<key>journeyrange</key>
+				<array>
+					<string>用餐时间：1小时</string>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>1</string>
+				<key>theme</key>
+				<string>13:00 参观景点：寒山寺：新年听钟，祈福</string>
+				<key>content</key>
+				<string>还记得那首《枫桥夜泊》吗，正是它让寒山寺名动天下哦！寒山寺属于禅宗中的临济宗，唐代贞观年间，当时的名僧寒山、希迁两位高僧创建寒山寺。历史上寒山寺曾是中国十大名寺之一，寺内古迹甚多，有张继诗的石刻碑文，寒山、拾得的石刻像哦！寒山寺属于禅宗中的临济宗，唐代贞观年间，当时的名僧寒山、希迁两位高僧创建寒山寺。历史上寒山寺曾是中国十大名寺之一，寺内古迹甚多，有张继诗的石刻碑文，寒山、拾得的石刻像，文徵明、唐寅所书碑文残片等。</string>
+				<key>journeyrange</key>
+				<array>
+					<string>活动时间：3小时</string>
+				</array>
+				<key>picurls</key>
+				<array>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/09/01/11/Dwk8mj.jpg</string>
+					</dict>
+					<dict>
+						<key>img</key>
+						<string>http://pic3.40017.cn/shortTour/2015/08/26/12/urXwlB.jpg</string>
+					</dict>
+				</array>
+			</dict>
+			<dict>
+				<key>type</key>
+				<string>0</string>
+				<key>theme</key>
+				<string>17:30 交通</string>
+				<key>content</key>
+				<string>抵达xxx168酒店，结束一天愉快的行程，返回温暖的家！</string>
+			</dict>
+		</array>
+	</dict>
+</array>
+</plist>

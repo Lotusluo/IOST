@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+  <head>
+  <meta name="content-type" content="text/html; charset=UTF-8">
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="user-scalable=no, width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    
+   <script src="https://cdn.bootcss.com/vConsole/3.2.0/vconsole.min.js"></script>
+  <script>"undefined"==typeof CODE_LIVE&&(!function(e){var t={nonSecure:"60207",secure:"60208"},c={nonSecure:"http://",secure:"https://"},r={nonSecure:"127.0.0.1",secure:"gapdebug.local.genuitec.com"},n="https:"===window.location.protocol?"secure":"nonSecure";script=e.createElement("script"),script.type="text/javascript",script.async=!0,script.src=c[n]+r[n]+":"+t[n]+"/codelive-assets/bundle.js",e.getElementsByTagName("head")[0].appendChild(script)}(document),CODE_LIVE=!0);</script></head>
+  
+  <body data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-2" data-genuitec-path="/webbrigde/WebRoot/voice.html">
+    <h1 data-genuitec-lp-enabled="false" data-genuitec-file-id="wc1-2" data-genuitec-path="/webbrigde/WebRoot/voice.html">Voice Train Demo</h1>
+    <input id="userId" name="userId" value="efd465ca-70de-4153-ab29-2f3d6ebeacce" type="hidden"/><br>
+    <input id="token" name="token" value="6700f1c3ce35723cf1f3d46019b547ed" type="hidden"/><br>
+    <script>
+    var vConsole = new VConsole();
+      window.onerror = function(err) {
+        log('window.onerror: ' + err)
+      }
+    	
+      /*这段代码是固定的，必须要放到js中*/
+      function setupWebViewJavascriptBridge(callback) {
+        if (window.WebViewJavascriptBridge) { return callback(WebViewJavascriptBridge); }
+        if (window.WVJBCallbacks) { return window.WVJBCallbacks.push(callback); }
+        window.WVJBCallbacks = [callback];
+        var WVJBIframe = document.createElement('iframe');
+        WVJBIframe.style.display = 'none';
+        WVJBIframe.src = 'wvjbscheme://__BRIDGE_LOADED__';
+        document.documentElement.appendChild(WVJBIframe);
+        setTimeout(function() { document.documentElement.removeChild(WVJBIframe) }, 0)
+      }
+    
+      /*与OC交互的所有JS方法都要放在此处注册，才能调用通过JS调用OC或者让OC调用这里的JS*/
+      
+      setupWebViewJavascriptBridge(function(bridge) {
+         	var userId = document.getElementById('userId').value
+         	var token = document.getElementById('token').value
+         	bridge.callHandler('startLiuShengTrain',{'userId':userId,'token':token}, function(response) {
+         		var str = JSON.stringify(response)
+         		console.log("startLiuShengTrain response:"+str)
+       		})
+         });
+       
+    </script>
+    
+    
+    
+  </body>
+</html>

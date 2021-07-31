@@ -1,0 +1,61 @@
+Objective-C类定义了一个将数据与相关行为相结合的对象。 有时，仅表示单个任务或行为单元而不是方法集合是有意义的。
+块是C，Objective-C和C++等编程语言中的高级功能，它允许创建不同的代码段，这些代码段可以传递给方法或函数，就像它们是值一样。 块是Objective-C对象，因此它们可以添加到NSArray或NSDictionary等集合中。 它们还能够从封闭范围中捕获值，使其类似于其他编程语言中的闭包或lambda。
+简单块声明语法
+returntype (^blockName)(argumentType);
+Objective-C
+简单的块实现 - 
+returntype (^blockName)(argumentType)= ^{
+};
+Objective-C
+下面是一个简单的示例代码 - 
+void (^simpleBlock)(void) = ^{
+   NSLog(@"This is a block");
+};
+Objective-C
+调用上面块的示例代码 - 
+simpleBlock();
+Shell
+块接受参数和返回值块也可以像方法和函数一样获取参数和返回值。下面是一个使用参数和返回值实现和调用块的简单示例。
+double (^multiplyTwoValues)(double, double) = 
+   ^(double firstValue, double secondValue) {
+      return firstValue * secondValue;
+   };
+
+double result = multiplyTwoValues(2,4); 
+NSLog(@"The result is %f", result);
+Objective-C
+使用类型定义块这是一个在块中使用typedef的简单示例。 请注意，此示例不适用于在线编译器。 它是使用XCode运行的。
+#import <Foundation/Foundation.h>
+
+typedef void (^CompletionBlock)();
+@interface SampleClass:NSObject
+- (void)performActionWithCompletion:(CompletionBlock)completionBlock;
+@end
+
+@implementation SampleClass
+
+- (void)performActionWithCompletion:(CompletionBlock)completionBlock {
+
+   NSLog(@"Action Performed");
+   completionBlock();
+}
+
+@end
+
+int main() {
+
+   /* 第一个Objective-C程序 */
+   SampleClass *sampleClass = [[SampleClass alloc]init];
+   [sampleClass performActionWithCompletion:^{
+      NSLog(@"Completion is called to intimate action is performed.");
+   }];
+
+   return 0;
+}
+Objective-C
+执行上面示例代码，得到以下结果：
+2018-11-10 08:14:57.105 demo[184:323] Action Performed
+2018-11-10 08:14:57.108 demo[184:323] Completion is called to intimate action is performed.
+Shell
+块在iOS应用程序和Mac OS X中使用得更多。因此，了解块的用法更为重要。//原文出自【易百教程】，商业转载请联系作者获得授权，非商业请保留原文链接：https://www.yiibai.com/objective_c/objective_c_blocks.html
+

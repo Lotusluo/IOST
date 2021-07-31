@@ -1,0 +1,23 @@
+{
+  "name": "iamstarkov.com",
+  "version": "3.0.0",
+  "description": "Frontend blog by Vladimir Starkov",
+  "repository": "https://github.com/iamstarkov/iamstarkov.com",
+  "author": "Vladimir Starkov <iamstarkov@gmail.com> (https://iamstarkov.com/)",
+  "scripts": {
+    "dev": "next",
+    "now-build": "next build && next export -o dist"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@mdx-js/loader": "1.5.8",
+    "@mdx-js/mdx": "1.5.8",
+    "@next/mdx": "9.3.4",
+    "next": "9.3.4",
+    "prop-types": "15.7.2",
+    "react": "16.13.1",
+    "react-dom": "16.13.1",
+    "spectacle": "5.8.0"
+  },
+  "devDependencies": {}
+}

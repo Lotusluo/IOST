@@ -1,0 +1,319 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		78EFFC011F25CB1B007DC008 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EFFC001F25CB1B007DC008 /* main.m */; };
+		78EFFC041F25CB1B007DC008 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EFFC031F25CB1B007DC008 /* AppDelegate.m */; };
+		78EFFC071F25CB1B007DC008 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 78EFFC061F25CB1B007DC008 /* ViewController.m */; };
+		78EFFC0A1F25CB1B007DC008 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EFFC081F25CB1B007DC008 /* Main.storyboard */; };
+		78EFFC0C1F25CB1B007DC008 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 78EFFC0B1F25CB1B007DC008 /* Assets.xcassets */; };
+		78EFFC0F1F25CB1B007DC008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 78EFFC0D1F25CB1B007DC008 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		78EFFBFC1F25CB1B007DC008 /* ZLCopyClipboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZLCopyClipboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		78EFFC001F25CB1B007DC008 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		78EFFC021F25CB1B007DC008 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		78EFFC031F25CB1B007DC008 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		78EFFC051F25CB1B007DC008 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		78EFFC061F25CB1B007DC008 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		78EFFC091F25CB1B007DC008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		78EFFC0B1F25CB1B007DC008 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		78EFFC0E1F25CB1B007DC008 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		78EFFC101F25CB1B007DC008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		78EFFBF91F25CB1B007DC008 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		78EFFBF31F25CB1B007DC008 = {
+			isa = PBXGroup;
+			children = (
+				78EFFBFE1F25CB1B007DC008 /* ZLCopyClipboard */,
+				78EFFBFD1F25CB1B007DC008 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		78EFFBFD1F25CB1B007DC008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				78EFFBFC1F25CB1B007DC008 /* ZLCopyClipboard.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		78EFFBFE1F25CB1B007DC008 /* ZLCopyClipboard */ = {
+			isa = PBXGroup;
+			children = (
+				78EFFC021F25CB1B007DC008 /* AppDelegate.h */,
+				78EFFC031F25CB1B007DC008 /* AppDelegate.m */,
+				78EFFC051F25CB1B007DC008 /* ViewController.h */,
+				78EFFC061F25CB1B007DC008 /* ViewController.m */,
+				78EFFC081F25CB1B007DC008 /* Main.storyboard */,
+				78EFFC0B1F25CB1B007DC008 /* Assets.xcassets */,
+				78EFFC0D1F25CB1B007DC008 /* LaunchScreen.storyboard */,
+				78EFFC101F25CB1B007DC008 /* Info.plist */,
+				78EFFBFF1F25CB1B007DC008 /* Supporting Files */,
+			);
+			path = ZLCopyClipboard;
+			sourceTree = "<group>";
+		};
+		78EFFBFF1F25CB1B007DC008 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				78EFFC001F25CB1B007DC008 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		78EFFBFB1F25CB1B007DC008 /* ZLCopyClipboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 78EFFC131F25CB1B007DC008 /* Build configuration list for PBXNativeTarget "ZLCopyClipboard" */;
+			buildPhases = (
+				78EFFBF81F25CB1B007DC008 /* Sources */,
+				78EFFBF91F25CB1B007DC008 /* Frameworks */,
+				78EFFBFA1F25CB1B007DC008 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZLCopyClipboard;
+			productName = ZLCopyClipboard;
+			productReference = 78EFFBFC1F25CB1B007DC008 /* ZLCopyClipboard.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		78EFFBF41F25CB1B007DC008 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = ZL;
+				TargetAttributes = {
+					78EFFBFB1F25CB1B007DC008 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 7734U6Q8V5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 78EFFBF71F25CB1B007DC008 /* Build configuration list for PBXProject "ZLCopyClipboard" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 78EFFBF31F25CB1B007DC008;
+			productRefGroup = 78EFFBFD1F25CB1B007DC008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				78EFFBFB1F25CB1B007DC008 /* ZLCopyClipboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		78EFFBFA1F25CB1B007DC008 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EFFC0F1F25CB1B007DC008 /* LaunchScreen.storyboard in Resources */,
+				78EFFC0C1F25CB1B007DC008 /* Assets.xcassets in Resources */,
+				78EFFC0A1F25CB1B007DC008 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		78EFFBF81F25CB1B007DC008 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				78EFFC071F25CB1B007DC008 /* ViewController.m in Sources */,
+				78EFFC041F25CB1B007DC008 /* AppDelegate.m in Sources */,
+				78EFFC011F25CB1B007DC008 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		78EFFC081F25CB1B007DC008 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78EFFC091F25CB1B007DC008 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		78EFFC0D1F25CB1B007DC008 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				78EFFC0E1F25CB1B007DC008 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		78EFFC111F25CB1B007DC008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		78EFFC121F25CB1B007DC008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		78EFFC141F25CB1B007DC008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7734U6Q8V5;
+				INFOPLIST_FILE = ZLCopyClipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangli.ZLCopyClipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		78EFFC151F25CB1B007DC008 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7734U6Q8V5;
+				INFOPLIST_FILE = ZLCopyClipboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.zhangli.ZLCopyClipboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		78EFFBF71F25CB1B007DC008 /* Build configuration list for PBXProject "ZLCopyClipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EFFC111F25CB1B007DC008 /* Debug */,
+				78EFFC121F25CB1B007DC008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		78EFFC131F25CB1B007DC008 /* Build configuration list for PBXNativeTarget "ZLCopyClipboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				78EFFC141F25CB1B007DC008 /* Debug */,
+				78EFFC151F25CB1B007DC008 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 78EFFBF41F25CB1B007DC008 /* Project object */;
+}

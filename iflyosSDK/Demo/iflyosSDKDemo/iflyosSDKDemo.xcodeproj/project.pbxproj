@@ -1,0 +1,909 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44CD8946AB7F9FA5D6B6FEB8 /* Pods_iflyosSDKDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8F62E835350E4A3073584A4D /* Pods_iflyosSDKDemo.framework */; };
+		842F33BC21D09107004E3686 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 842F33BB21D09107004E3686 /* AVFoundation.framework */; };
+		842FC4BE2140D2200096F3C9 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 842FC4BC2140D2200096F3C9 /* LoginViewController.m */; };
+		842FC4BF2140D2200096F3C9 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 842FC4BD2140D2200096F3C9 /* LoginViewController.xib */; };
+		8452E5B321378EA300502637 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452E5B221378EA300502637 /* AppDelegate.m */; };
+		8452E5B621378EA300502637 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452E5B521378EA300502637 /* ViewController.m */; };
+		8452E5B921378EA300502637 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452E5B721378EA300502637 /* Main.storyboard */; };
+		8452E5BB21378EAE00502637 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8452E5BA21378EAE00502637 /* Assets.xcassets */; };
+		8452E5BE21378EAE00502637 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8452E5BC21378EAE00502637 /* LaunchScreen.storyboard */; };
+		8452E5C121378EAE00502637 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8452E5C021378EAE00502637 /* main.m */; };
+		84726AD221466A61001F8072 /* NewPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 84726AD021466A61001F8072 /* NewPageViewController.m */; };
+		84726AD321466A61001F8072 /* NewPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 84726AD121466A61001F8072 /* NewPageViewController.xib */; };
+		8491A0852195331A0057F748 /* BLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491A0832195331A0057F748 /* BLEViewController.m */; };
+		8491A0862195331A0057F748 /* BLEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491A0842195331A0057F748 /* BLEViewController.xib */; };
+		8491A0B42199749A0057F748 /* DeviceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491A0B22199749A0057F748 /* DeviceViewController.m */; };
+		8491A0B52199749A0057F748 /* DeviceViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491A0B32199749A0057F748 /* DeviceViewController.xib */; };
+		8491A0B9219ABCB00057F748 /* CallrecordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491A0B7219ABCB00057F748 /* CallrecordViewController.m */; };
+		8491A0BA219ABCB10057F748 /* CallrecordViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491A0B8219ABCB00057F748 /* CallrecordViewController.xib */; };
+		8491A0BD219AC5130057F748 /* UserInfoModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491A0BC219AC5130057F748 /* UserInfoModel.m */; };
+		8491A0C1219BF58C0057F748 /* ContactsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8491A0BF219BF58C0057F748 /* ContactsViewController.m */; };
+		8491A0C3219BF5E70057F748 /* ContactsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8491A0C0219BF58C0057F748 /* ContactsViewController.xib */; };
+		84FFC3482224EF6200D101C2 /* UIView+UIView_alertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 84FFC3462224EF6100D101C2 /* UIView+UIView_alertView.m */; };
+		8E1CD6F322C0A6C90094A32C /* AlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E1CD6F222C0A6C80094A32C /* AlertView.m */; };
+		8E39ABB8252C698500243CC3 /* libiflyosSDKForiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E39ABA1252C698400243CC3 /* libiflyosSDKForiOS.a */; };
+		8E39ABB9252C698500243CC3 /* libiflyosPushService.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E39ABA2252C698400243CC3 /* libiflyosPushService.a */; };
+		8E39ABBA252C698500243CC3 /* iflyosConfig.xml in Resources */ = {isa = PBXBuildFile; fileRef = 8E39ABAA252C698400243CC3 /* iflyosConfig.xml */; };
+		8E39ABBB252C698500243CC3 /* quiet-profiles.json in Resources */ = {isa = PBXBuildFile; fileRef = 8E39ABB6252C698400243CC3 /* quiet-profiles.json */; };
+		8E39ABBC252C698500243CC3 /* libiflyosQuietSDKForiOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E39ABB7252C698500243CC3 /* libiflyosQuietSDKForiOS.a */; };
+		8E4AB50C21F8504B00E218EB /* UserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E4AB50A21F8504B00E218EB /* UserViewController.m */; };
+		8E4AB50D21F8504B00E218EB /* UserViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E4AB50B21F8504B00E218EB /* UserViewController.xib */; };
+		8E5BCF572525E75C006908D2 /* NSString+NSString_hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5BCF562525E75B006908D2 /* NSString+NSString_hex.m */; };
+		8E5BCF712526281A006908D2 /* NewBLEProtocalModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5BCF702526281A006908D2 /* NewBLEProtocalModel.m */; };
+		8E5BCF7525262B9B006908D2 /* NSData+hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5BCF7425262B9B006908D2 /* NSData+hex.m */; };
+		8E5BCF9225282AA2006908D2 /* NewBLEProtocalParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E5BCF9125282AA2006908D2 /* NewBLEProtocalParser.m */; };
+		8E80A0B324EE7ABD003F50D6 /* PushViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E80A0B124EE7ABD003F50D6 /* PushViewController.m */; };
+		8E80A0B424EE7ABD003F50D6 /* PushViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E80A0B224EE7ABD003F50D6 /* PushViewController.xib */; };
+		8EA3E43222F7EB1100E1B13D /* ArchPlistUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EA3E43022F7EB1100E1B13D /* ArchPlistUtils.m */; };
+		8EB382062254ADD900818F2E /* QRCodeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB382042254ADD900818F2E /* QRCodeViewController.m */; };
+		8EB382072254ADD900818F2E /* QRCodeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EB382052254ADD900818F2E /* QRCodeViewController.xib */; };
+		8EB3820C2254ADEF00818F2E /* IFLYQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB382082254ADEE00818F2E /* IFLYQRCodeView.m */; };
+		8EB3820D2254ADEF00818F2E /* IFLYQRCodeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EB3820A2254ADEF00818F2E /* IFLYQRCodeUtils.m */; };
+		8EB7F8C12255A6980088859C /* test.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7F8BE2255A6980088859C /* test.html */; };
+		8EB7F8C22255A6980088859C /* voice.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7F8BF2255A6980088859C /* voice.html */; };
+		8EB7F8C32255A6980088859C /* web.html in Resources */ = {isa = PBXBuildFile; fileRef = 8EB7F8C02255A6980088859C /* web.html */; };
+		8ED515E7215E1049003F9C01 /* VoiceTrainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED515E5215E1049003F9C01 /* VoiceTrainViewController.m */; };
+		8ED515E8215E1049003F9C01 /* VoiceTrainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED515E6215E1049003F9C01 /* VoiceTrainViewController.xib */; };
+		8ED515EC215E1523003F9C01 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED515EA215E1523003F9C01 /* MainViewController.m */; };
+		8ED515ED215E1523003F9C01 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED515EB215E1523003F9C01 /* MainViewController.xib */; };
+		8ED515F1215E1A26003F9C01 /* MusicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED515EF215E1A26003F9C01 /* MusicViewController.m */; };
+		8ED515F2215E1A26003F9C01 /* MusicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED515F0215E1A26003F9C01 /* MusicViewController.xib */; };
+		8ED515F6215E1D47003F9C01 /* BuiltInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED515F4215E1D47003F9C01 /* BuiltInViewController.m */; };
+		8ED515F7215E1D47003F9C01 /* BuiltInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED515F5215E1D47003F9C01 /* BuiltInViewController.xib */; };
+		8ED51600215E28DB003F9C01 /* LogTextViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED515FE215E28DB003F9C01 /* LogTextViewController.m */; };
+		8ED51601215E28DB003F9C01 /* LogTextViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED515FF215E28DB003F9C01 /* LogTextViewController.xib */; };
+		8ED51605215E4BE2003F9C01 /* AuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED51603215E4BE2003F9C01 /* AuthViewController.m */; };
+		8ED51606215E4BE2003F9C01 /* AuthViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8ED51604215E4BE2003F9C01 /* AuthViewController.xib */; };
+		8EDAF55A2525A57E00C5E0AF /* NewBLEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDAF5582525A57E00C5E0AF /* NewBLEViewController.m */; };
+		8EDAF55B2525A57E00C5E0AF /* NewBLEViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EDAF5592525A57E00C5E0AF /* NewBLEViewController.xib */; };
+		8EE3AF2824FE37BA00BE1856 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EE3AF2624FE37BA00BE1856 /* MediaViewController.m */; };
+		8EE3AF2924FE37BA00BE1856 /* MediaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EE3AF2724FE37BA00BE1856 /* MediaViewController.xib */; };
+		8EEBB276255E6712004F9AD1 /* IFTTTViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8EEBB274255E6712004F9AD1 /* IFTTTViewController.xib */; };
+		8EEBB277255E6712004F9AD1 /* IFTTTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EEBB275255E6712004F9AD1 /* IFTTTViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		529FC7461FCFB6F3815A7ACC /* Pods-iflyosSDKDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iflyosSDKDemo.release.xcconfig"; path = "Target Support Files/Pods-iflyosSDKDemo/Pods-iflyosSDKDemo.release.xcconfig"; sourceTree = "<group>"; };
+		6B986155DCFA2099974B75B3 /* Pods-iflyosSDKDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iflyosSDKDemo.debug.xcconfig"; path = "Target Support Files/Pods-iflyosSDKDemo/Pods-iflyosSDKDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		842F33BB21D09107004E3686 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		842FC4BB2140D2200096F3C9 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		842FC4BC2140D2200096F3C9 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		842FC4BD2140D2200096F3C9 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		8452E5AE21378EA300502637 /* iflyosSDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iflyosSDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8452E5B121378EA300502637 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8452E5B221378EA300502637 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8452E5B421378EA300502637 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8452E5B521378EA300502637 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8452E5B821378EA300502637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8452E5BA21378EAE00502637 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8452E5BD21378EAE00502637 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8452E5BF21378EAE00502637 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8452E5C021378EAE00502637 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		84726ACF21466A61001F8072 /* NewPageViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewPageViewController.h; sourceTree = "<group>"; };
+		84726AD021466A61001F8072 /* NewPageViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewPageViewController.m; sourceTree = "<group>"; };
+		84726AD121466A61001F8072 /* NewPageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewPageViewController.xib; sourceTree = "<group>"; };
+		8491A0822195331A0057F748 /* BLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BLEViewController.h; sourceTree = "<group>"; };
+		8491A0832195331A0057F748 /* BLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BLEViewController.m; sourceTree = "<group>"; };
+		8491A0842195331A0057F748 /* BLEViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BLEViewController.xib; sourceTree = "<group>"; };
+		8491A0B12199749A0057F748 /* DeviceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceViewController.h; sourceTree = "<group>"; };
+		8491A0B22199749A0057F748 /* DeviceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceViewController.m; sourceTree = "<group>"; };
+		8491A0B32199749A0057F748 /* DeviceViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeviceViewController.xib; sourceTree = "<group>"; };
+		8491A0B6219ABCAF0057F748 /* CallrecordViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CallrecordViewController.h; sourceTree = "<group>"; };
+		8491A0B7219ABCB00057F748 /* CallrecordViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CallrecordViewController.m; sourceTree = "<group>"; };
+		8491A0B8219ABCB00057F748 /* CallrecordViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CallrecordViewController.xib; sourceTree = "<group>"; };
+		8491A0BB219AC5130057F748 /* UserInfoModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserInfoModel.h; sourceTree = "<group>"; };
+		8491A0BC219AC5130057F748 /* UserInfoModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserInfoModel.m; sourceTree = "<group>"; };
+		8491A0BE219BF58C0057F748 /* ContactsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContactsViewController.h; sourceTree = "<group>"; };
+		8491A0BF219BF58C0057F748 /* ContactsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContactsViewController.m; sourceTree = "<group>"; };
+		8491A0C0219BF58C0057F748 /* ContactsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsViewController.xib; sourceTree = "<group>"; };
+		84C1B50C216DB17600D18F5B /* libiflyosSDKForiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiflyosSDKForiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		84FFC3462224EF6100D101C2 /* UIView+UIView_alertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+UIView_alertView.m"; sourceTree = "<group>"; };
+		84FFC3472224EF6200D101C2 /* UIView+UIView_alertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+UIView_alertView.h"; sourceTree = "<group>"; };
+		8E0F824D22C0721400E5577C /* libiflyosQuietSDKForiOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiflyosQuietSDKForiOS.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E1CD6F122C0A6C80094A32C /* AlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlertView.h; sourceTree = "<group>"; };
+		8E1CD6F222C0A6C80094A32C /* AlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlertView.m; sourceTree = "<group>"; };
+		8E39ABA1252C698400243CC3 /* libiflyosSDKForiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiflyosSDKForiOS.a; sourceTree = "<group>"; };
+		8E39ABA2252C698400243CC3 /* libiflyosPushService.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiflyosPushService.a; sourceTree = "<group>"; };
+		8E39ABA5252C698400243CC3 /* IFLYOSNSString+SBJSONParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSNSString+SBJSONParsing.h"; sourceTree = "<group>"; };
+		8E39ABA6252C698400243CC3 /* IFLYOSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSConfig.h; sourceTree = "<group>"; };
+		8E39ABA7252C698400243CC3 /* iflyosSDKForiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosSDKForiOS.h; sourceTree = "<group>"; };
+		8E39ABA8252C698400243CC3 /* IFLYOSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSSDK.h; sourceTree = "<group>"; };
+		8E39ABA9252C698400243CC3 /* IFLYOSWKWebView+IFLYOSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSWKWebView+IFLYOSWebView.h"; sourceTree = "<group>"; };
+		8E39ABAA252C698400243CC3 /* iflyosConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iflyosConfig.xml; sourceTree = "<group>"; };
+		8E39ABAB252C698400243CC3 /* IFLYOSBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSBLEManager.h; sourceTree = "<group>"; };
+		8E39ABAC252C698400243CC3 /* IFLYOSProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSProductManager.h; sourceTree = "<group>"; };
+		8E39ABAD252C698400243CC3 /* IFLYOSUIColor+IFLYOSColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSUIColor+IFLYOSColorUtil.h"; sourceTree = "<group>"; };
+		8E39ABAE252C698400243CC3 /* IFLYOSSDKDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSSDKDelegate.h; sourceTree = "<group>"; };
+		8E39ABAF252C698400243CC3 /* iflyosCommonSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosCommonSDK.h; sourceTree = "<group>"; };
+		8E39ABB0252C698400243CC3 /* IFLYOSNSData+SBJSONParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSNSData+SBJSONParsing.h"; sourceTree = "<group>"; };
+		8E39ABB2252C698400243CC3 /* IFLYOSPushServiceProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSPushServiceProtocol.h; sourceTree = "<group>"; };
+		8E39ABB3252C698400243CC3 /* IFLYOSPushService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSPushService.h; sourceTree = "<group>"; };
+		8E39ABB5252C698400243CC3 /* iflyosQuietSDKForiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosQuietSDKForiOS.h; sourceTree = "<group>"; };
+		8E39ABB6252C698400243CC3 /* quiet-profiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "quiet-profiles.json"; sourceTree = "<group>"; };
+		8E39ABB7252C698500243CC3 /* libiflyosQuietSDKForiOS.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libiflyosQuietSDKForiOS.a; sourceTree = "<group>"; };
+		8E4AB50921F8504B00E218EB /* UserViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UserViewController.h; sourceTree = "<group>"; };
+		8E4AB50A21F8504B00E218EB /* UserViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UserViewController.m; sourceTree = "<group>"; };
+		8E4AB50B21F8504B00E218EB /* UserViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserViewController.xib; sourceTree = "<group>"; };
+		8E5BCF552525E75B006908D2 /* NSString+NSString_hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+NSString_hex.h"; sourceTree = "<group>"; };
+		8E5BCF562525E75B006908D2 /* NSString+NSString_hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+NSString_hex.m"; sourceTree = "<group>"; };
+		8E5BCF6F2526281A006908D2 /* NewBLEProtocalModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBLEProtocalModel.h; sourceTree = "<group>"; };
+		8E5BCF702526281A006908D2 /* NewBLEProtocalModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBLEProtocalModel.m; sourceTree = "<group>"; };
+		8E5BCF7325262B9B006908D2 /* NSData+hex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSData+hex.h"; sourceTree = "<group>"; };
+		8E5BCF7425262B9B006908D2 /* NSData+hex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSData+hex.m"; sourceTree = "<group>"; };
+		8E5BCF9025282AA2006908D2 /* NewBLEProtocalParser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBLEProtocalParser.h; sourceTree = "<group>"; };
+		8E5BCF9125282AA2006908D2 /* NewBLEProtocalParser.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBLEProtocalParser.m; sourceTree = "<group>"; };
+		8E74E2B123A9CAA600A4F8DA /* IFLYOSNSString+SBJSONParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSNSString+SBJSONParsing.h"; sourceTree = "<group>"; };
+		8E74E2B223A9CAA600A4F8DA /* IFLYOSConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSConfig.h; sourceTree = "<group>"; };
+		8E74E2B323A9CAA600A4F8DA /* iflyosSDKForiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosSDKForiOS.h; sourceTree = "<group>"; };
+		8E74E2B423A9CAA600A4F8DA /* IFLYOSSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSSDK.h; sourceTree = "<group>"; };
+		8E74E2B523A9CAA600A4F8DA /* IFLYOSWKWebView+IFLYOSWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSWKWebView+IFLYOSWebView.h"; sourceTree = "<group>"; };
+		8E74E2B623A9CAA600A4F8DA /* iflyosConfig.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = iflyosConfig.xml; sourceTree = "<group>"; };
+		8E74E2B723A9CAA600A4F8DA /* IFLYOSBLEManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSBLEManager.h; sourceTree = "<group>"; };
+		8E74E2B823A9CAA600A4F8DA /* IFLYOSProductManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSProductManager.h; sourceTree = "<group>"; };
+		8E74E2B923A9CAA600A4F8DA /* IFLYOSUIColor+IFLYOSColorUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSUIColor+IFLYOSColorUtil.h"; sourceTree = "<group>"; };
+		8E74E2BA23A9CAA600A4F8DA /* IFLYOSSDKDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYOSSDKDelegate.h; sourceTree = "<group>"; };
+		8E74E2BB23A9CAA600A4F8DA /* iflyosCommonSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosCommonSDK.h; sourceTree = "<group>"; };
+		8E74E2BC23A9CAA600A4F8DA /* IFLYOSNSData+SBJSONParsing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "IFLYOSNSData+SBJSONParsing.h"; sourceTree = "<group>"; };
+		8E74E2BE23A9CAA600A4F8DA /* iflyosQuietSDKForiOS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iflyosQuietSDKForiOS.h; sourceTree = "<group>"; };
+		8E74E2BF23A9CAA600A4F8DA /* quiet-profiles.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "quiet-profiles.json"; sourceTree = "<group>"; };
+		8E80A0AB24EE5BC2003F50D6 /* libiflyosPushService.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libiflyosPushService.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E80A0B024EE7ABD003F50D6 /* PushViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PushViewController.h; sourceTree = "<group>"; };
+		8E80A0B124EE7ABD003F50D6 /* PushViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PushViewController.m; sourceTree = "<group>"; };
+		8E80A0B224EE7ABD003F50D6 /* PushViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PushViewController.xib; sourceTree = "<group>"; };
+		8EA3E43022F7EB1100E1B13D /* ArchPlistUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArchPlistUtils.m; sourceTree = "<group>"; };
+		8EA3E43122F7EB1100E1B13D /* ArchPlistUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArchPlistUtils.h; sourceTree = "<group>"; };
+		8EB382032254ADD900818F2E /* QRCodeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QRCodeViewController.h; sourceTree = "<group>"; };
+		8EB382042254ADD900818F2E /* QRCodeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QRCodeViewController.m; sourceTree = "<group>"; };
+		8EB382052254ADD900818F2E /* QRCodeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = QRCodeViewController.xib; sourceTree = "<group>"; };
+		8EB382082254ADEE00818F2E /* IFLYQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFLYQRCodeView.m; sourceTree = "<group>"; };
+		8EB382092254ADEF00818F2E /* IFLYQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYQRCodeView.h; sourceTree = "<group>"; };
+		8EB3820A2254ADEF00818F2E /* IFLYQRCodeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFLYQRCodeUtils.m; sourceTree = "<group>"; };
+		8EB3820B2254ADEF00818F2E /* IFLYQRCodeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFLYQRCodeUtils.h; sourceTree = "<group>"; };
+		8EB7F8BE2255A6980088859C /* test.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = test.html; sourceTree = "<group>"; };
+		8EB7F8BF2255A6980088859C /* voice.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = voice.html; sourceTree = "<group>"; };
+		8EB7F8C02255A6980088859C /* web.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = web.html; sourceTree = "<group>"; };
+		8ED515E4215E1049003F9C01 /* VoiceTrainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VoiceTrainViewController.h; sourceTree = "<group>"; };
+		8ED515E5215E1049003F9C01 /* VoiceTrainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VoiceTrainViewController.m; sourceTree = "<group>"; };
+		8ED515E6215E1049003F9C01 /* VoiceTrainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = VoiceTrainViewController.xib; sourceTree = "<group>"; };
+		8ED515E9215E1523003F9C01 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		8ED515EA215E1523003F9C01 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		8ED515EB215E1523003F9C01 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		8ED515EE215E1A26003F9C01 /* MusicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MusicViewController.h; sourceTree = "<group>"; };
+		8ED515EF215E1A26003F9C01 /* MusicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MusicViewController.m; sourceTree = "<group>"; };
+		8ED515F0215E1A26003F9C01 /* MusicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MusicViewController.xib; sourceTree = "<group>"; };
+		8ED515F3215E1D47003F9C01 /* BuiltInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuiltInViewController.h; sourceTree = "<group>"; };
+		8ED515F4215E1D47003F9C01 /* BuiltInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuiltInViewController.m; sourceTree = "<group>"; };
+		8ED515F5215E1D47003F9C01 /* BuiltInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuiltInViewController.xib; sourceTree = "<group>"; };
+		8ED515FD215E28DB003F9C01 /* LogTextViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogTextViewController.h; sourceTree = "<group>"; };
+		8ED515FE215E28DB003F9C01 /* LogTextViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogTextViewController.m; sourceTree = "<group>"; };
+		8ED515FF215E28DB003F9C01 /* LogTextViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LogTextViewController.xib; sourceTree = "<group>"; };
+		8ED51602215E4BE2003F9C01 /* AuthViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AuthViewController.h; sourceTree = "<group>"; };
+		8ED51603215E4BE2003F9C01 /* AuthViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AuthViewController.m; sourceTree = "<group>"; };
+		8ED51604215E4BE2003F9C01 /* AuthViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AuthViewController.xib; sourceTree = "<group>"; };
+		8EDAF5572525A57E00C5E0AF /* NewBLEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBLEViewController.h; sourceTree = "<group>"; };
+		8EDAF5582525A57E00C5E0AF /* NewBLEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NewBLEViewController.m; sourceTree = "<group>"; };
+		8EDAF5592525A57E00C5E0AF /* NewBLEViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NewBLEViewController.xib; sourceTree = "<group>"; };
+		8EE3AF2524FE37BA00BE1856 /* MediaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		8EE3AF2624FE37BA00BE1856 /* MediaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		8EE3AF2724FE37BA00BE1856 /* MediaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MediaViewController.xib; sourceTree = "<group>"; };
+		8EEBB273255E6712004F9AD1 /* IFTTTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IFTTTViewController.h; sourceTree = "<group>"; };
+		8EEBB274255E6712004F9AD1 /* IFTTTViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IFTTTViewController.xib; sourceTree = "<group>"; };
+		8EEBB275255E6712004F9AD1 /* IFTTTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IFTTTViewController.m; sourceTree = "<group>"; };
+		8F62E835350E4A3073584A4D /* Pods_iflyosSDKDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iflyosSDKDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8452E5AB21378EA300502637 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E39ABBC252C698500243CC3 /* libiflyosQuietSDKForiOS.a in Frameworks */,
+				842F33BC21D09107004E3686 /* AVFoundation.framework in Frameworks */,
+				8E39ABB9252C698500243CC3 /* libiflyosPushService.a in Frameworks */,
+				8E39ABB8252C698500243CC3 /* libiflyosSDKForiOS.a in Frameworks */,
+				44CD8946AB7F9FA5D6B6FEB8 /* Pods_iflyosSDKDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18640D04DB78E6A897F8F1CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E80A0AB24EE5BC2003F50D6 /* libiflyosPushService.a */,
+				8E0F824D22C0721400E5577C /* libiflyosQuietSDKForiOS.a */,
+				842F33BB21D09107004E3686 /* AVFoundation.framework */,
+				84C1B50C216DB17600D18F5B /* libiflyosSDKForiOS.a */,
+				8F62E835350E4A3073584A4D /* Pods_iflyosSDKDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49AD737DDF69937D650A6C07 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B986155DCFA2099974B75B3 /* Pods-iflyosSDKDemo.debug.xcconfig */,
+				529FC7461FCFB6F3815A7ACC /* Pods-iflyosSDKDemo.release.xcconfig */,
+			);
+			name = Pods;
+			path = ../Pods;
+			sourceTree = "<group>";
+		};
+		8452E5A521378EA300502637 = {
+			isa = PBXGroup;
+			children = (
+				8452E5B021378EA300502637 /* iflyosSDKDemo */,
+				8452E5AF21378EA300502637 /* Products */,
+				49AD737DDF69937D650A6C07 /* Pods */,
+				18640D04DB78E6A897F8F1CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8452E5AF21378EA300502637 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8452E5AE21378EA300502637 /* iflyosSDKDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8452E5B021378EA300502637 /* iflyosSDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABA0252C696F00243CC3 /* lib */,
+				8E5BCF532525E71F006908D2 /* common */,
+				8EDAF55D2525CD7200C5E0AF /* newBLE */,
+				8E1CD6F122C0A6C80094A32C /* AlertView.h */,
+				8E1CD6F222C0A6C80094A32C /* AlertView.m */,
+				8EB3820E2254B52400818F2E /* web */,
+				84FFC3472224EF6200D101C2 /* UIView+UIView_alertView.h */,
+				84FFC3462224EF6100D101C2 /* UIView+UIView_alertView.m */,
+				8452E5B121378EA300502637 /* AppDelegate.h */,
+				8452E5B221378EA300502637 /* AppDelegate.m */,
+				8452E5B421378EA300502637 /* ViewController.h */,
+				8452E5B521378EA300502637 /* ViewController.m */,
+				8452E5B721378EA300502637 /* Main.storyboard */,
+				8452E5BA21378EAE00502637 /* Assets.xcassets */,
+				8452E5BC21378EAE00502637 /* LaunchScreen.storyboard */,
+				8452E5BF21378EAE00502637 /* Info.plist */,
+				8452E5C021378EAE00502637 /* main.m */,
+				842FC4BB2140D2200096F3C9 /* LoginViewController.h */,
+				842FC4BC2140D2200096F3C9 /* LoginViewController.m */,
+				842FC4BD2140D2200096F3C9 /* LoginViewController.xib */,
+				84726ACF21466A61001F8072 /* NewPageViewController.h */,
+				84726AD021466A61001F8072 /* NewPageViewController.m */,
+				8ED515E4215E1049003F9C01 /* VoiceTrainViewController.h */,
+				8ED515E5215E1049003F9C01 /* VoiceTrainViewController.m */,
+				84726AD121466A61001F8072 /* NewPageViewController.xib */,
+				8ED515E6215E1049003F9C01 /* VoiceTrainViewController.xib */,
+				8ED515E9215E1523003F9C01 /* MainViewController.h */,
+				8ED515EA215E1523003F9C01 /* MainViewController.m */,
+				8ED515EB215E1523003F9C01 /* MainViewController.xib */,
+				8ED515EE215E1A26003F9C01 /* MusicViewController.h */,
+				8ED515EF215E1A26003F9C01 /* MusicViewController.m */,
+				8ED515F0215E1A26003F9C01 /* MusicViewController.xib */,
+				8ED515F3215E1D47003F9C01 /* BuiltInViewController.h */,
+				8ED515F4215E1D47003F9C01 /* BuiltInViewController.m */,
+				8ED515F5215E1D47003F9C01 /* BuiltInViewController.xib */,
+				8ED515FD215E28DB003F9C01 /* LogTextViewController.h */,
+				8ED515FF215E28DB003F9C01 /* LogTextViewController.xib */,
+				8ED515FE215E28DB003F9C01 /* LogTextViewController.m */,
+				8ED51602215E4BE2003F9C01 /* AuthViewController.h */,
+				8ED51603215E4BE2003F9C01 /* AuthViewController.m */,
+				8ED51604215E4BE2003F9C01 /* AuthViewController.xib */,
+				8491A0822195331A0057F748 /* BLEViewController.h */,
+				8491A0832195331A0057F748 /* BLEViewController.m */,
+				8491A0842195331A0057F748 /* BLEViewController.xib */,
+				8491A0B12199749A0057F748 /* DeviceViewController.h */,
+				8491A0B22199749A0057F748 /* DeviceViewController.m */,
+				8491A0B32199749A0057F748 /* DeviceViewController.xib */,
+				8491A0B6219ABCAF0057F748 /* CallrecordViewController.h */,
+				8491A0B7219ABCB00057F748 /* CallrecordViewController.m */,
+				8491A0B8219ABCB00057F748 /* CallrecordViewController.xib */,
+				8491A0BB219AC5130057F748 /* UserInfoModel.h */,
+				8491A0BC219AC5130057F748 /* UserInfoModel.m */,
+				8491A0BE219BF58C0057F748 /* ContactsViewController.h */,
+				8491A0BF219BF58C0057F748 /* ContactsViewController.m */,
+				8491A0C0219BF58C0057F748 /* ContactsViewController.xib */,
+				8E4AB50921F8504B00E218EB /* UserViewController.h */,
+				8E4AB50A21F8504B00E218EB /* UserViewController.m */,
+				8E4AB50B21F8504B00E218EB /* UserViewController.xib */,
+				8EA3E43122F7EB1100E1B13D /* ArchPlistUtils.h */,
+				8EA3E43022F7EB1100E1B13D /* ArchPlistUtils.m */,
+				8E80A0B024EE7ABD003F50D6 /* PushViewController.h */,
+				8E80A0B124EE7ABD003F50D6 /* PushViewController.m */,
+				8E80A0B224EE7ABD003F50D6 /* PushViewController.xib */,
+				8EB382022254AD3300818F2E /* QRCode */,
+				8EE3AF2524FE37BA00BE1856 /* MediaViewController.h */,
+				8EE3AF2624FE37BA00BE1856 /* MediaViewController.m */,
+				8EE3AF2724FE37BA00BE1856 /* MediaViewController.xib */,
+				8EEBB273255E6712004F9AD1 /* IFTTTViewController.h */,
+				8EEBB275255E6712004F9AD1 /* IFTTTViewController.m */,
+				8EEBB274255E6712004F9AD1 /* IFTTTViewController.xib */,
+			);
+			path = iflyosSDKDemo;
+			sourceTree = "<group>";
+		};
+		8E39ABA0252C696F00243CC3 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABA3252C698400243CC3 /* include */,
+				8E39ABA2252C698400243CC3 /* libiflyosPushService.a */,
+				8E39ABB7252C698500243CC3 /* libiflyosQuietSDKForiOS.a */,
+				8E39ABA1252C698400243CC3 /* libiflyosSDKForiOS.a */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		8E39ABA3252C698400243CC3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABA4252C698400243CC3 /* iflyosSDKForiOS */,
+				8E39ABB1252C698400243CC3 /* iflyosPushService */,
+				8E39ABB4252C698400243CC3 /* iflyosQuietSDKForiOS */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8E39ABA4252C698400243CC3 /* iflyosSDKForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABA5252C698400243CC3 /* IFLYOSNSString+SBJSONParsing.h */,
+				8E39ABA6252C698400243CC3 /* IFLYOSConfig.h */,
+				8E39ABA7252C698400243CC3 /* iflyosSDKForiOS.h */,
+				8E39ABA8252C698400243CC3 /* IFLYOSSDK.h */,
+				8E39ABA9252C698400243CC3 /* IFLYOSWKWebView+IFLYOSWebView.h */,
+				8E39ABAA252C698400243CC3 /* iflyosConfig.xml */,
+				8E39ABAB252C698400243CC3 /* IFLYOSBLEManager.h */,
+				8E39ABAC252C698400243CC3 /* IFLYOSProductManager.h */,
+				8E39ABAD252C698400243CC3 /* IFLYOSUIColor+IFLYOSColorUtil.h */,
+				8E39ABAE252C698400243CC3 /* IFLYOSSDKDelegate.h */,
+				8E39ABAF252C698400243CC3 /* iflyosCommonSDK.h */,
+				8E39ABB0252C698400243CC3 /* IFLYOSNSData+SBJSONParsing.h */,
+			);
+			path = iflyosSDKForiOS;
+			sourceTree = "<group>";
+		};
+		8E39ABB1252C698400243CC3 /* iflyosPushService */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABB2252C698400243CC3 /* IFLYOSPushServiceProtocol.h */,
+				8E39ABB3252C698400243CC3 /* IFLYOSPushService.h */,
+			);
+			path = iflyosPushService;
+			sourceTree = "<group>";
+		};
+		8E39ABB4252C698400243CC3 /* iflyosQuietSDKForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E39ABB5252C698400243CC3 /* iflyosQuietSDKForiOS.h */,
+				8E39ABB6252C698400243CC3 /* quiet-profiles.json */,
+			);
+			path = iflyosQuietSDKForiOS;
+			sourceTree = "<group>";
+		};
+		8E5BCF532525E71F006908D2 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				8E5BCF542525E728006908D2 /* category */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		8E5BCF542525E728006908D2 /* category */ = {
+			isa = PBXGroup;
+			children = (
+				8E5BCF552525E75B006908D2 /* NSString+NSString_hex.h */,
+				8E5BCF562525E75B006908D2 /* NSString+NSString_hex.m */,
+				8E5BCF7325262B9B006908D2 /* NSData+hex.h */,
+				8E5BCF7425262B9B006908D2 /* NSData+hex.m */,
+			);
+			path = category;
+			sourceTree = "<group>";
+		};
+		8E74E2AF23A9CAA600A4F8DA /* include */ = {
+			isa = PBXGroup;
+			children = (
+				8E74E2B023A9CAA600A4F8DA /* iflyosSDKForiOS */,
+				8E74E2BD23A9CAA600A4F8DA /* iflyosQuietSDKForiOS */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		8E74E2B023A9CAA600A4F8DA /* iflyosSDKForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E74E2B623A9CAA600A4F8DA /* iflyosConfig.xml */,
+				8E74E2B123A9CAA600A4F8DA /* IFLYOSNSString+SBJSONParsing.h */,
+				8E74E2B223A9CAA600A4F8DA /* IFLYOSConfig.h */,
+				8E74E2B323A9CAA600A4F8DA /* iflyosSDKForiOS.h */,
+				8E74E2B423A9CAA600A4F8DA /* IFLYOSSDK.h */,
+				8E74E2B523A9CAA600A4F8DA /* IFLYOSWKWebView+IFLYOSWebView.h */,
+				8E74E2B723A9CAA600A4F8DA /* IFLYOSBLEManager.h */,
+				8E74E2B823A9CAA600A4F8DA /* IFLYOSProductManager.h */,
+				8E74E2B923A9CAA600A4F8DA /* IFLYOSUIColor+IFLYOSColorUtil.h */,
+				8E74E2BA23A9CAA600A4F8DA /* IFLYOSSDKDelegate.h */,
+				8E74E2BB23A9CAA600A4F8DA /* iflyosCommonSDK.h */,
+				8E74E2BC23A9CAA600A4F8DA /* IFLYOSNSData+SBJSONParsing.h */,
+			);
+			path = iflyosSDKForiOS;
+			sourceTree = "<group>";
+		};
+		8E74E2BD23A9CAA600A4F8DA /* iflyosQuietSDKForiOS */ = {
+			isa = PBXGroup;
+			children = (
+				8E74E2BE23A9CAA600A4F8DA /* iflyosQuietSDKForiOS.h */,
+				8E74E2BF23A9CAA600A4F8DA /* quiet-profiles.json */,
+			);
+			path = iflyosQuietSDKForiOS;
+			sourceTree = "<group>";
+		};
+		8EB382022254AD3300818F2E /* QRCode */ = {
+			isa = PBXGroup;
+			children = (
+				8EB3820B2254ADEF00818F2E /* IFLYQRCodeUtils.h */,
+				8EB3820A2254ADEF00818F2E /* IFLYQRCodeUtils.m */,
+				8EB382092254ADEF00818F2E /* IFLYQRCodeView.h */,
+				8EB382082254ADEE00818F2E /* IFLYQRCodeView.m */,
+				8EB382032254ADD900818F2E /* QRCodeViewController.h */,
+				8EB382042254ADD900818F2E /* QRCodeViewController.m */,
+				8EB382052254ADD900818F2E /* QRCodeViewController.xib */,
+			);
+			path = QRCode;
+			sourceTree = "<group>";
+		};
+		8EB3820E2254B52400818F2E /* web */ = {
+			isa = PBXGroup;
+			children = (
+				8E74E2AF23A9CAA600A4F8DA /* include */,
+				8EB7F8BE2255A6980088859C /* test.html */,
+				8EB7F8BF2255A6980088859C /* voice.html */,
+				8EB7F8C02255A6980088859C /* web.html */,
+			);
+			path = web;
+			sourceTree = "<group>";
+		};
+		8EDAF55D2525CD7200C5E0AF /* newBLE */ = {
+			isa = PBXGroup;
+			children = (
+				8EDAF5572525A57E00C5E0AF /* NewBLEViewController.h */,
+				8EDAF5582525A57E00C5E0AF /* NewBLEViewController.m */,
+				8EDAF5592525A57E00C5E0AF /* NewBLEViewController.xib */,
+				8E5BCF6F2526281A006908D2 /* NewBLEProtocalModel.h */,
+				8E5BCF702526281A006908D2 /* NewBLEProtocalModel.m */,
+				8E5BCF9025282AA2006908D2 /* NewBLEProtocalParser.h */,
+				8E5BCF9125282AA2006908D2 /* NewBLEProtocalParser.m */,
+			);
+			path = newBLE;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8452E5AD21378EA300502637 /* iflyosSDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8452E5C421378EAE00502637 /* Build configuration list for PBXNativeTarget "iflyosSDKDemo" */;
+			buildPhases = (
+				EC5569A6199A6CDB175BCDE6 /* [CP] Check Pods Manifest.lock */,
+				8452E5AA21378EA300502637 /* Sources */,
+				8452E5AB21378EA300502637 /* Frameworks */,
+				8452E5AC21378EA300502637 /* Resources */,
+				0608AF8E3159D20BAEEF4A57 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = iflyosSDKDemo;
+			productName = iflyosSDKDemo;
+			productReference = 8452E5AE21378EA300502637 /* iflyosSDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8452E5A621378EA300502637 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = test;
+				TargetAttributes = {
+					8452E5AD21378EA300502637 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 8452E5A921378EA300502637 /* Build configuration list for PBXProject "iflyosSDKDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8452E5A521378EA300502637;
+			productRefGroup = 8452E5AF21378EA300502637 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8452E5AD21378EA300502637 /* iflyosSDKDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8452E5AC21378EA300502637 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EEBB276255E6712004F9AD1 /* IFTTTViewController.xib in Resources */,
+				8E39ABBB252C698500243CC3 /* quiet-profiles.json in Resources */,
+				8E80A0B424EE7ABD003F50D6 /* PushViewController.xib in Resources */,
+				8E4AB50D21F8504B00E218EB /* UserViewController.xib in Resources */,
+				8ED515F2215E1A26003F9C01 /* MusicViewController.xib in Resources */,
+				842FC4BF2140D2200096F3C9 /* LoginViewController.xib in Resources */,
+				8452E5BE21378EAE00502637 /* LaunchScreen.storyboard in Resources */,
+				8491A0B52199749A0057F748 /* DeviceViewController.xib in Resources */,
+				8452E5BB21378EAE00502637 /* Assets.xcassets in Resources */,
+				8EDAF55B2525A57E00C5E0AF /* NewBLEViewController.xib in Resources */,
+				8ED51601215E28DB003F9C01 /* LogTextViewController.xib in Resources */,
+				8EB7F8C12255A6980088859C /* test.html in Resources */,
+				8ED515F7215E1D47003F9C01 /* BuiltInViewController.xib in Resources */,
+				8452E5B921378EA300502637 /* Main.storyboard in Resources */,
+				8E39ABBA252C698500243CC3 /* iflyosConfig.xml in Resources */,
+				8491A0C3219BF5E70057F748 /* ContactsViewController.xib in Resources */,
+				8ED515E8215E1049003F9C01 /* VoiceTrainViewController.xib in Resources */,
+				8EE3AF2924FE37BA00BE1856 /* MediaViewController.xib in Resources */,
+				8491A0BA219ABCB10057F748 /* CallrecordViewController.xib in Resources */,
+				8ED515ED215E1523003F9C01 /* MainViewController.xib in Resources */,
+				8EB7F8C22255A6980088859C /* voice.html in Resources */,
+				8491A0862195331A0057F748 /* BLEViewController.xib in Resources */,
+				8ED51606215E4BE2003F9C01 /* AuthViewController.xib in Resources */,
+				8EB7F8C32255A6980088859C /* web.html in Resources */,
+				84726AD321466A61001F8072 /* NewPageViewController.xib in Resources */,
+				8EB382072254ADD900818F2E /* QRCodeViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0608AF8E3159D20BAEEF4A57 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iflyosSDKDemo/Pods-iflyosSDKDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-iflyosSDKDemo/Pods-iflyosSDKDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-iflyosSDKDemo/Pods-iflyosSDKDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EC5569A6199A6CDB175BCDE6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-iflyosSDKDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8452E5AA21378EA300502637 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8ED515F6215E1D47003F9C01 /* BuiltInViewController.m in Sources */,
+				8491A0C1219BF58C0057F748 /* ContactsViewController.m in Sources */,
+				8E5BCF712526281A006908D2 /* NewBLEProtocalModel.m in Sources */,
+				8E5BCF9225282AA2006908D2 /* NewBLEProtocalParser.m in Sources */,
+				8ED515F1215E1A26003F9C01 /* MusicViewController.m in Sources */,
+				8EDAF55A2525A57E00C5E0AF /* NewBLEViewController.m in Sources */,
+				8ED515E7215E1049003F9C01 /* VoiceTrainViewController.m in Sources */,
+				8EE3AF2824FE37BA00BE1856 /* MediaViewController.m in Sources */,
+				84726AD221466A61001F8072 /* NewPageViewController.m in Sources */,
+				84FFC3482224EF6200D101C2 /* UIView+UIView_alertView.m in Sources */,
+				8EA3E43222F7EB1100E1B13D /* ArchPlistUtils.m in Sources */,
+				8491A0852195331A0057F748 /* BLEViewController.m in Sources */,
+				8E4AB50C21F8504B00E218EB /* UserViewController.m in Sources */,
+				8491A0B9219ABCB00057F748 /* CallrecordViewController.m in Sources */,
+				8491A0B42199749A0057F748 /* DeviceViewController.m in Sources */,
+				842FC4BE2140D2200096F3C9 /* LoginViewController.m in Sources */,
+				8EB382062254ADD900818F2E /* QRCodeViewController.m in Sources */,
+				8EB3820C2254ADEF00818F2E /* IFLYQRCodeView.m in Sources */,
+				8E5BCF7525262B9B006908D2 /* NSData+hex.m in Sources */,
+				8E80A0B324EE7ABD003F50D6 /* PushViewController.m in Sources */,
+				8E5BCF572525E75C006908D2 /* NSString+NSString_hex.m in Sources */,
+				8452E5B621378EA300502637 /* ViewController.m in Sources */,
+				8EEBB277255E6712004F9AD1 /* IFTTTViewController.m in Sources */,
+				8ED51600215E28DB003F9C01 /* LogTextViewController.m in Sources */,
+				8E1CD6F322C0A6C90094A32C /* AlertView.m in Sources */,
+				8ED515EC215E1523003F9C01 /* MainViewController.m in Sources */,
+				8491A0BD219AC5130057F748 /* UserInfoModel.m in Sources */,
+				8EB3820D2254ADEF00818F2E /* IFLYQRCodeUtils.m in Sources */,
+				8ED51605215E4BE2003F9C01 /* AuthViewController.m in Sources */,
+				8452E5C121378EAE00502637 /* main.m in Sources */,
+				8452E5B321378EA300502637 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8452E5B721378EA300502637 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8452E5B821378EA300502637 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8452E5BC21378EAE00502637 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8452E5BD21378EAE00502637 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8452E5C221378EAE00502637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8452E5C321378EAE00502637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8452E5C521378EAE00502637 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B986155DCFA2099974B75B3 /* Pods-iflyosSDKDemo.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUXPJ5TUQX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iflyosSDKDemo/lib/include\"",
+				);
+				INFOPLIST_FILE = iflyosSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyosSDKDemo/lib",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"WebViewJavascriptBridge\"",
+					"-framework",
+					"\"XMLReader_PPTV\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luo.testtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Debug;
+		};
+		8452E5C621378EAE00502637 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 529FC7461FCFB6F3815A7ACC /* Pods-iflyosSDKDemo.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FUXPJ5TUQX;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/iflyosSDKDemo/lib/include\"",
+				);
+				INFOPLIST_FILE = iflyosSDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/iflyosSDKDemo/lib",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-fobjc-arc",
+					"$(inherited)",
+					"-framework",
+					"\"AFNetworking\"",
+					"-framework",
+					"\"WebViewJavascriptBridge\"",
+					"-framework",
+					"\"XMLReader_PPTV\"",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.luo.testtest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = 1;
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8452E5A921378EA300502637 /* Build configuration list for PBXProject "iflyosSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8452E5C221378EAE00502637 /* Debug */,
+				8452E5C321378EAE00502637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8452E5C421378EAE00502637 /* Build configuration list for PBXNativeTarget "iflyosSDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8452E5C521378EAE00502637 /* Debug */,
+				8452E5C621378EAE00502637 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8452E5A621378EA300502637 /* Project object */;
+}

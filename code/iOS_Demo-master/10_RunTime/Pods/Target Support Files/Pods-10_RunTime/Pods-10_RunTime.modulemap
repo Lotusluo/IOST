@@ -1,0 +1,6 @@
+framework module Pods_10_RunTime {
+  umbrella header "Pods-10_RunTime-umbrella.h"
+
+  export *
+  module * { export * }
+}

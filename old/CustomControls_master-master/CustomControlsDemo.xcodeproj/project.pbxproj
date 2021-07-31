@@ -1,0 +1,585 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1335A9AF1E333872003DC2EB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9AE1E333872003DC2EB /* main.m */; };
+		1335A9B21E333872003DC2EB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9B11E333872003DC2EB /* AppDelegate.m */; };
+		1335A9B51E333872003DC2EB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9B41E333872003DC2EB /* ViewController.m */; };
+		1335A9BA1E333872003DC2EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1335A9B91E333872003DC2EB /* Assets.xcassets */; };
+		1335A9BD1E333872003DC2EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1335A9BB1E333872003DC2EB /* LaunchScreen.storyboard */; };
+		1335A9C81E333872003DC2EB /* CustomControlsDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9C71E333872003DC2EB /* CustomControlsDemoTests.m */; };
+		1335A9D31E333872003DC2EB /* CustomControlsDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9D21E333872003DC2EB /* CustomControlsDemoUITests.m */; };
+		1335A9E41E3338DE003DC2EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1335A9E21E3338DE003DC2EB /* Main.storyboard */; };
+		1335A9F31E333900003DC2EB /* UIButton+Layout.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9E81E333900003DC2EB /* UIButton+Layout.m */; };
+		1335A9F41E333900003DC2EB /* ZRSCustomBtn.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9EA1E333900003DC2EB /* ZRSCustomBtn.m */; };
+		1335A9F51E333900003DC2EB /* ZRSCustomDottedLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9EC1E333900003DC2EB /* ZRSCustomDottedLine.m */; };
+		1335A9F61E333900003DC2EB /* ZRSCustomImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9EE1E333900003DC2EB /* ZRSCustomImgView.m */; };
+		1335A9F71E333900003DC2EB /* ZRSCustomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9F01E333900003DC2EB /* ZRSCustomView.m */; };
+		1335A9F81E333900003DC2EB /* ZRSStarRatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1335A9F21E333900003DC2EB /* ZRSStarRatingView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1335A9C41E333872003DC2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1335A9A21E333872003DC2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1335A9A91E333872003DC2EB;
+			remoteInfo = CustomControlsDemo;
+		};
+		1335A9CF1E333872003DC2EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1335A9A21E333872003DC2EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1335A9A91E333872003DC2EB;
+			remoteInfo = CustomControlsDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1335A9AA1E333872003DC2EB /* CustomControlsDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomControlsDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335A9AE1E333872003DC2EB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1335A9B01E333872003DC2EB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1335A9B11E333872003DC2EB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1335A9B31E333872003DC2EB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1335A9B41E333872003DC2EB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1335A9B91E333872003DC2EB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1335A9BC1E333872003DC2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1335A9BE1E333872003DC2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1335A9C31E333872003DC2EB /* CustomControlsDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomControlsDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335A9C71E333872003DC2EB /* CustomControlsDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomControlsDemoTests.m; sourceTree = "<group>"; };
+		1335A9C91E333872003DC2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1335A9CE1E333872003DC2EB /* CustomControlsDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomControlsDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1335A9D21E333872003DC2EB /* CustomControlsDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomControlsDemoUITests.m; sourceTree = "<group>"; };
+		1335A9D41E333872003DC2EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1335A9E31E3338DE003DC2EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1335A9E61E333900003DC2EB /* CustomControls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomControls.h; sourceTree = "<group>"; };
+		1335A9E71E333900003DC2EB /* UIButton+Layout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Layout.h"; sourceTree = "<group>"; };
+		1335A9E81E333900003DC2EB /* UIButton+Layout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Layout.m"; sourceTree = "<group>"; };
+		1335A9E91E333900003DC2EB /* ZRSCustomBtn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRSCustomBtn.h; sourceTree = "<group>"; };
+		1335A9EA1E333900003DC2EB /* ZRSCustomBtn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRSCustomBtn.m; sourceTree = "<group>"; };
+		1335A9EB1E333900003DC2EB /* ZRSCustomDottedLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRSCustomDottedLine.h; sourceTree = "<group>"; };
+		1335A9EC1E333900003DC2EB /* ZRSCustomDottedLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRSCustomDottedLine.m; sourceTree = "<group>"; };
+		1335A9ED1E333900003DC2EB /* ZRSCustomImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRSCustomImgView.h; sourceTree = "<group>"; };
+		1335A9EE1E333900003DC2EB /* ZRSCustomImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRSCustomImgView.m; sourceTree = "<group>"; };
+		1335A9EF1E333900003DC2EB /* ZRSCustomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRSCustomView.h; sourceTree = "<group>"; };
+		1335A9F01E333900003DC2EB /* ZRSCustomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRSCustomView.m; sourceTree = "<group>"; };
+		1335A9F11E333900003DC2EB /* ZRSStarRatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZRSStarRatingView.h; sourceTree = "<group>"; };
+		1335A9F21E333900003DC2EB /* ZRSStarRatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZRSStarRatingView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1335A9A71E333872003DC2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9C01E333872003DC2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9CB1E333872003DC2EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1335A9A11E333872003DC2EB = {
+			isa = PBXGroup;
+			children = (
+				1335A9E51E333900003DC2EB /* CustomControls */,
+				1335A9AC1E333872003DC2EB /* CustomControlsDemo */,
+				1335A9C61E333872003DC2EB /* CustomControlsDemoTests */,
+				1335A9D11E333872003DC2EB /* CustomControlsDemoUITests */,
+				1335A9AB1E333872003DC2EB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1335A9AB1E333872003DC2EB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9AA1E333872003DC2EB /* CustomControlsDemo.app */,
+				1335A9C31E333872003DC2EB /* CustomControlsDemoTests.xctest */,
+				1335A9CE1E333872003DC2EB /* CustomControlsDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1335A9AC1E333872003DC2EB /* CustomControlsDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9B01E333872003DC2EB /* AppDelegate.h */,
+				1335A9B11E333872003DC2EB /* AppDelegate.m */,
+				1335A9B31E333872003DC2EB /* ViewController.h */,
+				1335A9B41E333872003DC2EB /* ViewController.m */,
+				1335A9B91E333872003DC2EB /* Assets.xcassets */,
+				1335A9BB1E333872003DC2EB /* LaunchScreen.storyboard */,
+				1335A9E21E3338DE003DC2EB /* Main.storyboard */,
+				1335A9BE1E333872003DC2EB /* Info.plist */,
+				1335A9AD1E333872003DC2EB /* Supporting Files */,
+			);
+			path = CustomControlsDemo;
+			sourceTree = "<group>";
+		};
+		1335A9AD1E333872003DC2EB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9AE1E333872003DC2EB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1335A9C61E333872003DC2EB /* CustomControlsDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9C71E333872003DC2EB /* CustomControlsDemoTests.m */,
+				1335A9C91E333872003DC2EB /* Info.plist */,
+			);
+			path = CustomControlsDemoTests;
+			sourceTree = "<group>";
+		};
+		1335A9D11E333872003DC2EB /* CustomControlsDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9D21E333872003DC2EB /* CustomControlsDemoUITests.m */,
+				1335A9D41E333872003DC2EB /* Info.plist */,
+			);
+			path = CustomControlsDemoUITests;
+			sourceTree = "<group>";
+		};
+		1335A9E51E333900003DC2EB /* CustomControls */ = {
+			isa = PBXGroup;
+			children = (
+				1335A9E61E333900003DC2EB /* CustomControls.h */,
+				1335A9E71E333900003DC2EB /* UIButton+Layout.h */,
+				1335A9E81E333900003DC2EB /* UIButton+Layout.m */,
+				1335A9E91E333900003DC2EB /* ZRSCustomBtn.h */,
+				1335A9EA1E333900003DC2EB /* ZRSCustomBtn.m */,
+				1335A9EB1E333900003DC2EB /* ZRSCustomDottedLine.h */,
+				1335A9EC1E333900003DC2EB /* ZRSCustomDottedLine.m */,
+				1335A9ED1E333900003DC2EB /* ZRSCustomImgView.h */,
+				1335A9EE1E333900003DC2EB /* ZRSCustomImgView.m */,
+				1335A9EF1E333900003DC2EB /* ZRSCustomView.h */,
+				1335A9F01E333900003DC2EB /* ZRSCustomView.m */,
+				1335A9F11E333900003DC2EB /* ZRSStarRatingView.h */,
+				1335A9F21E333900003DC2EB /* ZRSStarRatingView.m */,
+			);
+			path = CustomControls;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1335A9A91E333872003DC2EB /* CustomControlsDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1335A9D71E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemo" */;
+			buildPhases = (
+				1335A9A61E333872003DC2EB /* Sources */,
+				1335A9A71E333872003DC2EB /* Frameworks */,
+				1335A9A81E333872003DC2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomControlsDemo;
+			productName = CustomControlsDemo;
+			productReference = 1335A9AA1E333872003DC2EB /* CustomControlsDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1335A9C21E333872003DC2EB /* CustomControlsDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1335A9DA1E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemoTests" */;
+			buildPhases = (
+				1335A9BF1E333872003DC2EB /* Sources */,
+				1335A9C01E333872003DC2EB /* Frameworks */,
+				1335A9C11E333872003DC2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1335A9C51E333872003DC2EB /* PBXTargetDependency */,
+			);
+			name = CustomControlsDemoTests;
+			productName = CustomControlsDemoTests;
+			productReference = 1335A9C31E333872003DC2EB /* CustomControlsDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1335A9CD1E333872003DC2EB /* CustomControlsDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1335A9DD1E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemoUITests" */;
+			buildPhases = (
+				1335A9CA1E333872003DC2EB /* Sources */,
+				1335A9CB1E333872003DC2EB /* Frameworks */,
+				1335A9CC1E333872003DC2EB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1335A9D01E333872003DC2EB /* PBXTargetDependency */,
+			);
+			name = CustomControlsDemoUITests;
+			productName = CustomControlsDemoUITests;
+			productReference = 1335A9CE1E333872003DC2EB /* CustomControlsDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1335A9A21E333872003DC2EB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "周荣水";
+				TargetAttributes = {
+					1335A9A91E333872003DC2EB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VZ7MTRGFPF;
+						ProvisioningStyle = Automatic;
+					};
+					1335A9C21E333872003DC2EB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VZ7MTRGFPF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1335A9A91E333872003DC2EB;
+					};
+					1335A9CD1E333872003DC2EB = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = VZ7MTRGFPF;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1335A9A91E333872003DC2EB;
+					};
+				};
+			};
+			buildConfigurationList = 1335A9A51E333872003DC2EB /* Build configuration list for PBXProject "CustomControlsDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1335A9A11E333872003DC2EB;
+			productRefGroup = 1335A9AB1E333872003DC2EB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1335A9A91E333872003DC2EB /* CustomControlsDemo */,
+				1335A9C21E333872003DC2EB /* CustomControlsDemoTests */,
+				1335A9CD1E333872003DC2EB /* CustomControlsDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1335A9A81E333872003DC2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335A9E41E3338DE003DC2EB /* Main.storyboard in Resources */,
+				1335A9BD1E333872003DC2EB /* LaunchScreen.storyboard in Resources */,
+				1335A9BA1E333872003DC2EB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9C11E333872003DC2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9CC1E333872003DC2EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1335A9A61E333872003DC2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335A9B51E333872003DC2EB /* ViewController.m in Sources */,
+				1335A9F61E333900003DC2EB /* ZRSCustomImgView.m in Sources */,
+				1335A9F41E333900003DC2EB /* ZRSCustomBtn.m in Sources */,
+				1335A9F51E333900003DC2EB /* ZRSCustomDottedLine.m in Sources */,
+				1335A9B21E333872003DC2EB /* AppDelegate.m in Sources */,
+				1335A9AF1E333872003DC2EB /* main.m in Sources */,
+				1335A9F31E333900003DC2EB /* UIButton+Layout.m in Sources */,
+				1335A9F81E333900003DC2EB /* ZRSStarRatingView.m in Sources */,
+				1335A9F71E333900003DC2EB /* ZRSCustomView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9BF1E333872003DC2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335A9C81E333872003DC2EB /* CustomControlsDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1335A9CA1E333872003DC2EB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1335A9D31E333872003DC2EB /* CustomControlsDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1335A9C51E333872003DC2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1335A9A91E333872003DC2EB /* CustomControlsDemo */;
+			targetProxy = 1335A9C41E333872003DC2EB /* PBXContainerItemProxy */;
+		};
+		1335A9D01E333872003DC2EB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1335A9A91E333872003DC2EB /* CustomControlsDemo */;
+			targetProxy = 1335A9CF1E333872003DC2EB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1335A9BB1E333872003DC2EB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1335A9BC1E333872003DC2EB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1335A9E21E3338DE003DC2EB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1335A9E31E3338DE003DC2EB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1335A9D51E333872003DC2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1335A9D61E333872003DC2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1335A9D81E333872003DC2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		1335A9D91E333872003DC2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		1335A9DB1E333872003DC2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomControlsDemo.app/CustomControlsDemo";
+			};
+			name = Debug;
+		};
+		1335A9DC1E333872003DC2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomControlsDemo.app/CustomControlsDemo";
+			};
+			name = Release;
+		};
+		1335A9DE1E333872003DC2EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomControlsDemo;
+			};
+			name = Debug;
+		};
+		1335A9DF1E333872003DC2EB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = VZ7MTRGFPF;
+				INFOPLIST_FILE = CustomControlsDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ZRS.CustomControlsDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = CustomControlsDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1335A9A51E333872003DC2EB /* Build configuration list for PBXProject "CustomControlsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335A9D51E333872003DC2EB /* Debug */,
+				1335A9D61E333872003DC2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1335A9D71E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335A9D81E333872003DC2EB /* Debug */,
+				1335A9D91E333872003DC2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1335A9DA1E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335A9DB1E333872003DC2EB /* Debug */,
+				1335A9DC1E333872003DC2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1335A9DD1E333872003DC2EB /* Build configuration list for PBXNativeTarget "CustomControlsDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1335A9DE1E333872003DC2EB /* Debug */,
+				1335A9DF1E333872003DC2EB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1335A9A21E333872003DC2EB /* Project object */;
+}
