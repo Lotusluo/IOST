@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		0435680626833B3D00D28355 /* RegularExpressionTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 0435680526833B3D00D28355 /* RegularExpressionTool.m */; };
 		043568202683494F00D28355 /* hehe.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 0435681F2683494F00D28355 /* hehe.bundle */; };
+		04606D8426B2C36F0006CC0F /* Testlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04606D7D26B2C3610006CC0F /* Testlib.framework */; };
+		04606D8526B2C36F0006CC0F /* Testlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 04606D7D26B2C3610006CC0F /* Testlib.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		0478216C269ED62000436C69 /* PeopleOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 0478216B269ED62000436C69 /* PeopleOC.m */; };
 		04782178269ED80400436C69 /* PeopleCPP.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04782177269ED80300436C69 /* PeopleCPP.cpp */; };
-		047822C1269F009900436C69 /* Testlib.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 047822A3269EFFBB00436C69 /* Testlib.framework */; };
-		047822C2269F009900436C69 /* Testlib.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 047822A3269EFFBB00436C69 /* Testlib.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		04D9BB002695A750003778EE /* CppObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BAFE2695A750003778EE /* CppObject.cpp */; };
 		04D9BB062695A7BE003778EE /* ViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BB052695A7BE003778EE /* ViewController.mm */; };
 		04D9BB1E2695AEFC003778EE /* AntiCppObject.mm in Sources */ = {isa = PBXBuildFile; fileRef = 04D9BB1C2695AEFC003778EE /* AntiCppObject.mm */; };
@@ -31,16 +31,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		047822A2269EFFBB00436C69 /* PBXContainerItemProxy */ = {
+		04606D7C26B2C3610006CC0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+			containerPortal = 04606D7726B2C3610006CC0F /* Testlib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 04782275269EFF6900436C69;
 			remoteInfo = Testlib;
 		};
-		047822A4269EFFBB00436C69 /* PBXContainerItemProxy */ = {
+		04606D7E26B2C3610006CC0F /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+			containerPortal = 04606D7726B2C3610006CC0F /* Testlib.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = 0478227E269EFF6900436C69;
 			remoteInfo = TestlibTests;
@@ -68,7 +68,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				047822C2269F009900436C69 /* Testlib.framework in Embed Frameworks */,
+				04606D8526B2C36F0006CC0F /* Testlib.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -79,12 +79,12 @@
 		0435680426833B3D00D28355 /* RegularExpressionTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegularExpressionTool.h; sourceTree = "<group>"; };
 		0435680526833B3D00D28355 /* RegularExpressionTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegularExpressionTool.m; sourceTree = "<group>"; };
 		0435681F2683494F00D28355 /* hehe.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = hehe.bundle; sourceTree = "<group>"; };
+		04606D7726B2C3610006CC0F /* Testlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Testlib.xcodeproj; path = Testlib/Testlib.xcodeproj; sourceTree = "<group>"; };
 		04782157269ECA1100436C69 /* PeopleOC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PeopleOC.h; sourceTree = "<group>"; };
 		0478215F269ECAEE00436C69 /* PeopleCPP.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = PeopleCPP.hpp; sourceTree = "<group>"; };
 		0478216B269ED62000436C69 /* PeopleOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeopleOC.m; sourceTree = "<group>"; };
 		04782177269ED80300436C69 /* PeopleCPP.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PeopleCPP.cpp; sourceTree = "<group>"; };
 		04782181269EDC5E00436C69 /* CustomBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomBridge.h; sourceTree = "<group>"; };
-		0478229D269EFFBB00436C69 /* Testlib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Testlib.xcodeproj; path = Testlib/Testlib.xcodeproj; sourceTree = "<group>"; };
 		04D9BAFE2695A750003778EE /* CppObject.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = CppObject.cpp; sourceTree = "<group>"; };
 		04D9BAFF2695A750003778EE /* CppObject.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = CppObject.hpp; sourceTree = "<group>"; };
 		04D9BB052695A7BE003778EE /* ViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ViewController.mm; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				047822C1269F009900436C69 /* Testlib.framework in Frameworks */,
+				04606D8426B2C36F0006CC0F /* Testlib.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +144,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		04606D7826B2C3610006CC0F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				04606D7D26B2C3610006CC0F /* Testlib.framework */,
+				04606D7F26B2C3610006CC0F /* TestlibTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		04782240269EFD4900436C69 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -151,19 +160,10 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		0478229E269EFFBB00436C69 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				047822A3269EFFBB00436C69 /* Testlib.framework */,
-				047822A5269EFFBB00436C69 /* TestlibTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		04F7DBCA2681EE4A00E4CCC8 = {
 			isa = PBXGroup;
 			children = (
-				0478229D269EFFBB00436C69 /* Testlib.xcodeproj */,
+				04606D7726B2C3610006CC0F /* Testlib.xcodeproj */,
 				04F7DBD52681EE4A00E4CCC8 /* adasdasdasd */,
 				04F7DBF12681EE4E00E4CCC8 /* adasdasdasdTests */,
 				04F7DBFC2681EE4E00E4CCC8 /* adasdasdasdUITests */,
@@ -330,8 +330,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 0478229E269EFFBB00436C69 /* Products */;
-					ProjectRef = 0478229D269EFFBB00436C69 /* Testlib.xcodeproj */;
+					ProductGroup = 04606D7826B2C3610006CC0F /* Products */;
+					ProjectRef = 04606D7726B2C3610006CC0F /* Testlib.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -344,18 +344,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		047822A3269EFFBB00436C69 /* Testlib.framework */ = {
+		04606D7D26B2C3610006CC0F /* Testlib.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = Testlib.framework;
-			remoteRef = 047822A2269EFFBB00436C69 /* PBXContainerItemProxy */;
+			remoteRef = 04606D7C26B2C3610006CC0F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		047822A5269EFFBB00436C69 /* TestlibTests.xctest */ = {
+		04606D7F26B2C3610006CC0F /* TestlibTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = TestlibTests.xctest;
-			remoteRef = 047822A4269EFFBB00436C69 /* PBXContainerItemProxy */;
+			remoteRef = 04606D7E26B2C3610006CC0F /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
