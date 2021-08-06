@@ -107,7 +107,7 @@ struct delegate{
     test = @"vm";
     PeopleOC *peopleOC = [PeopleOC new];
 //    peopleOC.testParams = @"a";
-//    void *pointer = (__bridge_retained void*)peopleOC;
+    void *pointer = (__bridge_retained void*)peopleOC;
 //    PeopleCPP *peopleCPP = new PeopleCPP(pointer,transferFun);
 //    delete peopleCPP;
 //    PeopleOC *people = [[PeopleOC alloc] init];

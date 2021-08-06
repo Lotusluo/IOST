@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1421" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="3r3-xm-kWA">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--URL Session View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="NSURLSessionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="weo-ai-Pd7">
+                                <rect key="frame" x="0.0" y="351" width="375" height="316"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="316" id="Qzx-NV-Ueg"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoY-Dl-62s">
+                                <rect key="frame" x="138" y="152" width="99" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="downloadTask"/>
+                                <connections>
+                                    <action selector="downloadTaskRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DEj-Ws-uX7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eyc-sa-Zab">
+                                <rect key="frame" x="153" y="206" width="69" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="blockTask"/>
+                                <connections>
+                                    <action selector="blockDataTaskRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ana-Pq-izk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuX-WW-stN">
+                                <rect key="frame" x="128" y="106" width="119" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="dataTask"/>
+                                <connections>
+                                    <action selector="dataTaskRequest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DP5-uc-NnJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="weo-ai-Pd7" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QrF-jP-9bX"/>
+                            <constraint firstAttribute="trailing" secondItem="weo-ai-Pd7" secondAttribute="trailing" id="XLf-a1-ph7"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="weo-ai-Pd7" secondAttribute="bottom" id="ueW-FQ-WCu"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RSe-lC-kxs"/>
+                    <connections>
+                        <outlet property="imageView" destination="weo-ai-Pd7" id="Omh-p1-DLf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1412" y="-1442"/>
+        </scene>
+        <!--URL Session View Controller-->
+        <scene sceneID="D3Q-QQ-MDk">
+            <objects>
+                <viewController id="Xvd-4H-oym" customClass="NSURLSessionViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Qgu-Xa-FeO"/>
+                        <viewControllerLayoutGuide type="bottom" id="Hqc-Vn-R9X"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Wlk-nK-UOa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a9A-V9-VPL">
+                                <rect key="frame" x="97" y="141" width="133" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="NSURLSession测试"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="yGK-pw-DIy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oz6-se-76K">
+                                <rect key="frame" x="67" y="195" width="192" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFURLSessionManager测试"/>
+                                <connections>
+                                    <segue destination="cgX-Zk-8jZ" kind="push" id="YIY-Fp-vP5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ll7-aJ-uiS">
+                                <rect key="frame" x="63" y="233" width="202" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFHTTPSessionManager测试"/>
+                                <connections>
+                                    <segue destination="6CJ-eK-K8m" kind="push" id="HCs-We-AQ9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MbU-L9-LeL">
+                                <rect key="frame" x="40" y="281" width="218" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFURLRequestSerialization测试"/>
+                                <connections>
+                                    <segue destination="Svt-uL-iou" kind="push" id="ofh-bf-72d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PQS-5P-gj8">
+                                <rect key="frame" x="90" y="367" width="147" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFSecurityPolicy测试"/>
+                                <connections>
+                                    <segue destination="0av-PL-8Bc" kind="push" id="1G5-6t-38k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XfT-Ct-d4X">
+                                <rect key="frame" x="35" y="319" width="229" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFURLResponseSerialization测试"/>
+                                <connections>
+                                    <segue destination="mci-4t-YV7" kind="push" id="0vF-cR-zn0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="oGM-Mf-gep"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="J9A-zA-hiW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1554" y="-361"/>
+        </scene>
+        <!--URL Response Serialization View Controller-->
+        <scene sceneID="tZK-E0-2H7">
+            <objects>
+                <viewController id="mci-4t-YV7" customClass="AFURLResponseSerializationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="mIM-Z0-nrR"/>
+                        <viewControllerLayoutGuide type="bottom" id="mXq-dO-m7A"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8cd-xl-sXc">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OJs-C5-cv4">
+                                <rect key="frame" x="157" y="143" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButton1:" destination="mci-4t-YV7" eventType="touchUpInside" id="USk-8l-6U7"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p82-gX-u6t">
+                                <rect key="frame" x="157" y="246" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButton2:" destination="mci-4t-YV7" eventType="touchUpInside" id="t6j-aa-zh3"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kSf-ms-g5h">
+                                <rect key="frame" x="164" y="341" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="clickButton3:" destination="mci-4t-YV7" eventType="touchUpInside" id="9PZ-xY-RaQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="i2E-cQ-V0Y"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iWR-0X-0G8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2665" y="-837"/>
+        </scene>
+        <!--URL Request Serialization View Controller-->
+        <scene sceneID="AUZ-if-rZt">
+            <objects>
+                <viewController id="Svt-uL-iou" customClass="AFURLRequestSerializationViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QVg-x5-3k1"/>
+                        <viewControllerLayoutGuide type="bottom" id="lWS-Yh-M25"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fbL-S0-icE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qoX-mH-hJI">
+                                <rect key="frame" x="69" y="163" width="213" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="multipart/form-data请求头拼接"/>
+                                <connections>
+                                    <action selector="request1:" destination="Svt-uL-iou" eventType="touchUpInside" id="jiu-iW-590"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F9V-SZ-9tl">
+                                <rect key="frame" x="122" y="252" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="原生请求头拼装"/>
+                                <connections>
+                                    <action selector="request2:" destination="Svt-uL-iou" eventType="touchUpInside" id="g9O-iB-gjs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iV4-6F-gfO">
+                                <rect key="frame" x="146" y="332" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="request3"/>
+                                <connections>
+                                    <action selector="request3:" destination="Svt-uL-iou" eventType="touchUpInside" id="hkI-Va-2ek"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="hkk-3C-4oz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nlP-Bx-dbf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2278" y="-111"/>
+        </scene>
+        <!--URL Session Manager View Controller-->
+        <scene sceneID="ybW-ga-M7H">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="cgX-Zk-8jZ" customClass="AFURLSessionManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wUd-mf-LNm"/>
+                        <viewControllerLayoutGuide type="bottom" id="mQV-Hc-PTV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Qx4-WU-zhl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zkl-qh-9KE">
+                                <rect key="frame" x="65" y="202" width="222" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFURLSessionManager请求数据"/>
+                                <connections>
+                                    <action selector="clickButton:" destination="cgX-Zk-8jZ" eventType="touchUpInside" id="rkz-1b-jHh"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bxZ-an-jDZ">
+                                <rect key="frame" x="0.0" y="385" width="375" height="282"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="282" id="Wad-es-KHX"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HXL-nl-CGV">
+                                <rect key="frame" x="64" y="140" width="222" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="AFURLSessionManager上传图片"/>
+                                <connections>
+                                    <action selector="uploadPic:" destination="cgX-Zk-8jZ" eventType="touchUpInside" id="AHG-he-Atg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="bxZ-an-jDZ" firstAttribute="leading" secondItem="Qx4-WU-zhl" secondAttribute="leading" id="iN8-qv-qI6"/>
+                            <constraint firstItem="mQV-Hc-PTV" firstAttribute="top" secondItem="bxZ-an-jDZ" secondAttribute="bottom" id="lCd-pv-vfm"/>
+                            <constraint firstAttribute="trailing" secondItem="bxZ-an-jDZ" secondAttribute="trailing" id="sjz-8d-dOd"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="1Gh-Mc-SjK"/>
+                    <connections>
+                        <outlet property="imageView" destination="bxZ-an-jDZ" id="09f-iZ-AyY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tYv-vd-0IN" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2137" y="-1442"/>
+        </scene>
+        <!--Session Manager View Controller-->
+        <scene sceneID="2QL-or-ukv">
+            <objects>
+                <viewController id="6CJ-eK-K8m" customClass="AFHTTPSessionManagerViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y69-Ny-JNj"/>
+                        <viewControllerLayoutGuide type="bottom" id="VPD-hU-hvU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Px1-3t-b8K">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q65-o0-zrg">
+                                <rect key="frame" x="-9" y="86" width="367" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="application/x-www-form-urlencoded格式的POST请求"/>
+                                <connections>
+                                    <action selector="visitBaidu:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="WM5-T6-pBY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ps5-cd-RLz">
+                                <rect key="frame" x="57" y="146" width="235" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="multipart/form-data格式Post请求1"/>
+                                <connections>
+                                    <action selector="updatePic:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="QAH-xd-8Is"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UWU-zb-HkH">
+                                <rect key="frame" x="59" y="300" width="231" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="application/json格式的POST请求1"/>
+                                <connections>
+                                    <action selector="applicationjsonPOST1:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="49X-SV-3Q2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wFd-lE-FRb">
+                                <rect key="frame" x="41" y="201" width="267" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="multipart/form-data格式Post原生实现2"/>
+                                <connections>
+                                    <action selector="multipartformPost2:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="gVx-ON-Bma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXz-wo-LUD">
+                                <rect key="frame" x="69" y="255" width="237" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="multipart/form-data格式Post原生3"/>
+                                <connections>
+                                    <action selector="multipartformPost3:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="BlB-vF-85o"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hF-Gi-21f">
+                                <rect key="frame" x="45" y="340" width="264" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="application/json格式的POST原生实现2"/>
+                                <connections>
+                                    <action selector="applicationjsonPOST2:" destination="6CJ-eK-K8m" eventType="touchUpInside" id="TyJ-rg-FKh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gig-jS-qDx">
+                                <rect key="frame" x="156" y="408" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="访问百度"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="vb9-TR-bLB"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Dga-a6-6az" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="360"/>
+        </scene>
+        <!--Security Policy View Controller-->
+        <scene sceneID="G71-ZJ-s8Q">
+            <objects>
+                <viewController id="0av-PL-8Bc" customClass="AFSecurityPolicyViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="o67-YR-kTU"/>
+                        <viewControllerLayoutGuide type="bottom" id="Bmz-ks-zif"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5J9-Kz-xI2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wq0-HM-say">
+                                <rect key="frame" x="116" y="145" width="108" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="自签名证书认证"/>
+                                <connections>
+                                    <action selector="buttion1:" destination="0av-PL-8Bc" eventType="touchUpInside" id="iBR-aE-1tf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mPe-Ki-eWV">
+                                <rect key="frame" x="88" y="214" width="169" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="通用证书认证之手动处理"/>
+                                <connections>
+                                    <action selector="button2:" destination="0av-PL-8Bc" eventType="touchUpInside" id="mB8-2G-WQD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xt4-ru-Jne">
+                                <rect key="frame" x="84" y="289" width="169" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="通用证书认证之默认处理"/>
+                                <connections>
+                                    <action selector="button3:" destination="0av-PL-8Bc" eventType="touchUpInside" id="hCr-Jo-AJO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="fBD-IW-4g8"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="C2c-kf-LcM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1892" y="388.15592203898052"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="6o9-RV-UgD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3r3-xm-kWA" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="BTm-Ew-iyU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Xvd-4H-oym" kind="relationship" relationship="rootViewController" id="yhm-Jm-mfR"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="teN-Zz-L8n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="895" y="-320"/>
+        </scene>
+    </scenes>
+</document>
